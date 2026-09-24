@@ -37,14 +37,13 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:180px minmax(0,1.4fr) minmax(260px,.6fr);gap:42px;align-items:start}
 .intro h2{font-size:clamp(2rem,3.5vw,3.1rem)}.intro p{margin:0;color:#3f535c;font-size:1.08rem}
 .host{padding:24px;border-left:3px solid var(--coral);background:#ffffff8c}.host small{display:block;margin-bottom:8px;color:var(--muted);font-weight:750;letter-spacing:.12em;text-transform:uppercase}.host p{font-size:.95rem}
-.speaker-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.speaker{min-height:150px;padding:26px;background:var(--paper);transition:.2s}.speaker:hover{position:relative;z-index:1;background:#f7fbfa;transform:translateY(-2px)}
-.speaker small{color:var(--teal);font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.speaker h3{margin:15px 0 6px;font:500 1.38rem/1.2 var(--serif)}.speaker p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.45}
-.speaker.featured{background:var(--navy);color:#fff}.speaker.featured p{color:#ffffffa8}.speaker.featured small{color:var(--aqua)}.note{margin:24px 0 0;color:var(--muted);font-size:.88rem}
+.participant-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px;align-items:start}
+.roster{border-top:3px solid var(--ink)}.roster>h3{margin:0;padding:20px 0 18px;border-bottom:1px solid var(--line);font:500 1.65rem/1.2 var(--serif)}
+.roster-list{margin:0;padding:0;list-style:none}.roster-list li{padding:17px 0 18px;border-bottom:1px solid var(--line)}
+.roster-list h4{margin:0 0 3px;font:500 1.15rem/1.25 var(--serif)}.roster-list p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.45}.note{margin:24px 0 0;color:var(--muted);font-size:.88rem}
 .place{background:var(--cream)}.place-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .place-card{display:flex;min-height:310px;flex-direction:column;padding:30px;border:1px solid #cfd6d2;background:#fffdf8}
-.place-card .label{color:var(--teal);font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.place-card h3{margin:34px 0 14px;font:500 1.65rem/1.15 var(--serif)}.place-card p{margin:0 0 24px;color:#506169;font-size:.92rem}
+.place-card h3{margin:0 0 14px;font:500 1.65rem/1.15 var(--serif)}.place-card p{margin:0 0 24px;color:#506169;font-size:.92rem}
 .place-card a{margin-top:auto;color:var(--teal);font-weight:700;text-decoration:none}.place-card a:hover{text-decoration:underline}
 .forthcoming{color:#fff;background:var(--navy)}.forthcoming .section-number{color:var(--aqua)}.tba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .tba-card{min-height:210px;padding:26px;border:1px solid #ffffff2b;background:#ffffff0b}.status{color:var(--aqua);font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
@@ -54,8 +53,8 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .contact{padding:72px 0;color:#fff;background:var(--teal)}.contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px}.contact h2{max-width:650px;font-size:clamp(2rem,4vw,3.5rem)}
 .contact a{white-space:nowrap;padding:13px 20px;border:1px solid #ffffff8c;text-decoration:none;font-weight:650}.contact a:hover{background:#fff;color:var(--teal)}
 footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer .wrap{display:flex;justify-content:space-between;gap:24px}footer a{color:inherit}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.intro-grid{grid-template-columns:150px 1fr}.host{grid-column:2}.speaker-grid,.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.speaker-grid,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.section-head,.intro-grid{grid-template-columns:1fr;gap:18px}.host{grid-column:auto}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.intro-grid{grid-template-columns:150px 1fr}.host{grid-column:2}.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.participant-columns,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.section-head,.intro-grid{grid-template-columns:1fr;gap:18px}.host{grid-column:auto}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
 </style>
 </head>
 <body>
@@ -85,37 +84,59 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 </div></section>
 
 <section id="speakers"><div class="wrap">
-  <div class="section-head"><div class="section-number">02 · People</div><h2>Confirmed participants &amp; speakers</h2></div>
-  <div class="speaker-grid">
-    <article class="speaker featured"><small>Lecture series</small><h3>Yifei Zhao</h3><p>University of Münster</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Anne-Marie Aubert</h3><p>CNRS · Sorbonne Université</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Valentin Buciumas</h3><p>POSTECH</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Yanze Chen</h3><p>Zhejiang University</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Yangyu Fan</h3><p>Beijing Institute of Technology</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Volker Heiermann</h3><p>Aix-Marseille Université</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Edmund Karasiewicz</h3><p>National University of Singapore</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Wen-Wei Li</h3><p>Peking University · BICMR</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Caihua Luo</h3><p>CUHK-Shenzhen</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Sergey Lysenko</h3><p>Université de Lorraine</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Chung Pang Mok</h3><p>Shanghai Institute for Mathematics and Interdisciplinary Sciences</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Omer Offen</h3><p>Brandeis University</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Shiv Prakash Patel</h3><p>IIT Delhi</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Eitan Sayag</h3><p>Ben-Gurion University</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Daniel Skodlerack</h3><p>ShanghaiTech University</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Dani Szpruch</h3><p>The Open University of Israel</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Shuichiro Takeda</h3><p>Osaka University</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Chenyan Wu</h3><p>University of Melbourne</p></article>
-    <article class="speaker"><small>Confirmed</small><h3>Jiandi Zou</h3><p>Harbin Institute of Technology</p></article>
+  <div class="section-head"><div class="section-number">02 · People</div><h2>Participants &amp; speakers</h2></div>
+  <div class="participant-columns">
+    <div class="roster">
+      <h3>Confirmed speakers</h3>
+      <ul class="roster-list">
+        <li><h4>Yifei Zhao</h4><p>University of Münster · Lecture series</p></li>
+        <li><h4>Anne-Marie Aubert</h4><p>CNRS · Sorbonne Université</p></li>
+        <li><h4>Valentin Buciumas</h4><p>POSTECH</p></li>
+        <li><h4>Yanze Chen</h4><p>Zhejiang University</p></li>
+        <li><h4>Yangyu Fan</h4><p>Beijing Institute of Technology</p></li>
+        <li><h4>Volker Heiermann</h4><p>Aix-Marseille Université</p></li>
+        <li><h4>Edmund Karasiewicz</h4><p>National University of Singapore</p></li>
+        <li><h4>Wen-Wei Li</h4><p>Peking University · BICMR</p></li>
+        <li><h4>Caihua Luo</h4><p>CUHK-Shenzhen</p></li>
+        <li><h4>Sergey Lysenko</h4><p>Université de Lorraine</p></li>
+        <li><h4>Omer Offen</h4><p>Brandeis University</p></li>
+        <li><h4>Shiv Prakash Patel</h4><p>IIT Delhi</p></li>
+        <li><h4>Eitan Sayag</h4><p>Ben-Gurion University</p></li>
+        <li><h4>Daniel Skodlerack</h4><p>ShanghaiTech University</p></li>
+        <li><h4>Shuichiro Takeda</h4><p>Osaka University</p></li>
+        <li><h4>Chenyan Wu</h4><p>University of Melbourne</p></li>
+        <li><h4>Jiandi Zou</h4><p>Harbin Institute of Technology</p></li>
+      </ul>
+    </div>
+    <div class="roster">
+      <h3>Other participants</h3>
+      <ul class="roster-list">
+        <li><h4>Chengbo Zhu</h4><p>National University of Singapore</p></li>
+        <li><h4>Lei Zhang</h4><p>National University of Singapore</p></li>
+        <li><h4>Chi-Heng Lo</h4><p>National University of Singapore</p></li>
+        <li><h4>Kayue Daniel Wong</h4><p>CUHK-Shenzhen</p></li>
+        <li><h4>Rui Chen</h4><p>Zhejiang University</p></li>
+        <li><h4>Bin Xu</h4><p>Tsinghua University · YMSC</p></li>
+        <li><h4>Daxin Xu</h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
+        <li><h4>Jialiang Zou</h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
+        <li><h4>Ning Li</h4><p>Nankai University</p></li>
+        <li><h4>Lingfei Yi</h4><p>Shanghai Center for Mathematical Sciences · Fudan University</p></li>
+        <li><h4>Dongming She</h4><p>Beijing Institute of Mathematical Sciences and Applications</p></li>
+        <li><h4>Marcela Hanzer</h4><p>University of Zagreb</p></li>
+        <li><h4>Yiyang Wang</h4><p>Kyoto University</p></li>
+        <li><h4>Huajie Li</h4><p>Tsinghua University</p></li>
+      </ul>
+    </div>
   </div>
-  <p class="note">This public list contains confirmed speakers and will be updated as the program is finalized.</p>
+  <p class="note">This public list contains confirmed participants and will be updated as the program is finalized.</p>
 </div></section>
 
 <section class="place" id="place"><div class="wrap">
   <div class="section-head"><div class="section-number">03 · Place</div><h2>The host city &amp; institutions</h2></div>
   <div class="place-grid">
-    <article class="place-card"><span class="label">Host center</span><h3>Tianyuan Mathematical Center in Southeast China</h3><p>Based at Xiamen University, TMSE is one of five national mathematical centers supported by the Tianyuan Mathematics Fund of the National Natural Science Foundation of China.</p><a href="https://tianyuan.xmu.edu.cn/">Visit the center →</a></article>
-    <article class="place-card"><span class="label">Host university</span><h3>Xiamen University</h3><p>Founded in 1921 by Tan Kah Kee, Xiamen University is a leading comprehensive university with a long tradition of research and international exchange.</p><a href="https://en.xmu.edu.cn/info/1046/19152.htm">About Xiamen University →</a></article>
-    <article class="place-card"><span class="label">Host city</span><h3>Xiamen</h3><p>A coastal city in Fujian Province, Xiamen is a historic trading port and an international gateway on China's southeast coast.</p><a href="https://www.xm.gov.cn/english/">About Xiamen →</a></article>
+    <article class="place-card"><h3>Tianyuan Mathematical Center in Southeast China</h3><p>Based at Xiamen University, TMSE is one of five national mathematical centers supported by the Tianyuan Mathematics Fund of the National Natural Science Foundation of China.</p><a href="https://tianyuan.xmu.edu.cn/">Visit the center →</a></article>
+    <article class="place-card"><h3>Xiamen University</h3><p>Founded in 1921 by Tan Kah Kee, Xiamen University is a leading comprehensive university with a long tradition of research and international exchange.</p><a href="https://en.xmu.edu.cn/info/1046/19152.htm">About Xiamen University →</a></article>
+    <article class="place-card"><h3>Xiamen</h3><p>A coastal city in Fujian Province, Xiamen is a historic trading port and an international gateway on China's southeast coast.</p><a href="https://www.xm.gov.cn/english/">About Xiamen →</a></article>
   </div>
 </div></section>
 

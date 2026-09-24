@@ -10,7 +10,7 @@ held at the **Tianyuan Mathematical Center in Southeast China**, Xiamen Universi
 ## Structure
 
 A single static page (`index.html`, self-contained HTML + CSS, no build step). Sections:
-About · Confirmed speakers · Host city and institutions · Program (TBA) · Organizing committee · Contact.
+About · Participants and speakers · Host city and institutions · Program (TBA) · Organizing committee · Contact.
 
 ## Editing
 
