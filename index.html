@@ -31,6 +31,9 @@ h1{max-width:850px;margin:0;font:500 clamp(3.4rem,7vw,6.8rem)/.93 var(--serif);l
 .hero-facts{display:grid;gap:12px}.hero-fact{padding:20px 22px;border:1px solid #ffffff30;background:#ffffff12;backdrop-filter:blur(10px)}
 .hero-fact span{display:block;margin-bottom:5px;color:var(--aqua);font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 .hero-fact strong{display:block;font-size:1rem;font-weight:650;line-height:1.45}
+.institution-strip{padding:30px 0;border-bottom:1px solid var(--line);background:#fff}
+.institution-strip .wrap{display:grid;max-width:700px;grid-template-columns:repeat(3,1fr);align-items:center;gap:clamp(24px,6vw,72px)}
+.institution-logo{display:flex;align-items:center;justify-content:center}.institution-logo img{display:block;width:clamp(76px,9vw,104px);height:auto;aspect-ratio:1;object-fit:contain}
 section{padding:96px 0}.section-head{display:grid;grid-template-columns:180px 1fr;gap:42px;margin-bottom:48px}
 .section-number{padding-top:9px;color:var(--teal);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-.035em}
@@ -77,6 +80,12 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 </div></header>
 
 <main id="main">
+<section class="institution-strip" aria-label="Institutions"><div class="wrap">
+  <a class="institution-logo" href="https://tianyuan.xmu.edu.cn/" aria-label="Tianyuan Mathematical Center in Southeast China"><img src="assets/logos/tianyuan-center.png" width="281" height="281" alt="Tianyuan Mathematical Center in Southeast China"></a>
+  <a class="institution-logo" href="https://en.xmu.edu.cn/" aria-label="Xiamen University"><img src="assets/logos/xiamen-university.png" width="491" height="494" alt="Xiamen University"></a>
+  <a class="institution-logo" href="https://www.zju.edu.cn/english/" aria-label="Zhejiang University"><img src="assets/logos/zhejiang-university.png" width="477" height="477" alt="Zhejiang University"></a>
+</div></section>
+
 <section class="intro" id="about"><div class="wrap intro-grid">
   <div class="section-number">01 · About</div>
   <div><h2>Covering groups and the Langlands program</h2><p>The conference brings together researchers working on the classical and geometric aspects of covering groups, creating a forum for lectures, research talks, and discussion.</p></div>

@@ -9,12 +9,12 @@ held at the **Tianyuan Mathematical Center in Southeast China**, Xiamen Universi
 
 ## Structure
 
-A single static page (`index.html`, self-contained HTML + CSS, no build step). Sections:
+A single static page (`index.html`, self-contained HTML + CSS, no build step) with image assets in `assets/`. Sections:
 About · Participants and speakers · Host city and institutions · Program (TBA) · Organizing committee · Contact.
 
 ## Editing
 
-Edit `index.html` directly and push to `main`; GitHub Pages redeploys automatically.
+Edit `index.html` and the files under `assets/` directly, then push to `main`; GitHub Pages redeploys automatically.
 
 ## Organizing committee
 
