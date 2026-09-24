@@ -42,7 +42,7 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .participant-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px;align-items:start}
 .roster{border-top:3px solid var(--ink)}.roster>h3{margin:0;padding:20px 0 18px;border-bottom:1px solid var(--line);font:500 1.65rem/1.2 var(--serif)}
 .roster-list{margin:0;padding:0;list-style:none}.roster-list li{padding:17px 0 18px;border-bottom:1px solid var(--line)}
-.roster-list h4{margin:0 0 3px;font:500 1.15rem/1.25 var(--serif)}.roster-list p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.45}.note{margin:24px 0 0;color:var(--muted);font-size:.88rem}
+.roster-list h4{margin:0 0 3px;font:500 1.15rem/1.25 var(--serif)}.roster-list h4 a,.person h3 a{color:var(--navy);text-decoration-color:#168a8a99;text-decoration-thickness:1px;text-underline-offset:.18em}.roster-list h4 a:hover,.person h3 a:hover{color:var(--teal);text-decoration-color:currentColor}.roster-list p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.45}.note{margin:24px 0 0;color:var(--muted);font-size:.88rem}
 .place{background:var(--cream)}.place-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .place-card{display:flex;min-height:310px;flex-direction:column;padding:30px;border:1px solid #cfd6d2;background:#fffdf8}
 .place-card h3{margin:0 0 14px;font:500 1.65rem/1.15 var(--serif)}.place-card p{margin:0 0 24px;color:#506169;font-size:.92rem}
@@ -90,42 +90,41 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
     <div class="roster">
       <h3>Confirmed speakers</h3>
       <ul class="roster-list">
-        <li><h4>Yifei Zhao</h4><p>University of Münster · Lecture series</p></li>
-        <li><h4>Anne-Marie Aubert</h4><p>CNRS · Sorbonne Université</p></li>
-        <li><h4>Valentin Buciumas</h4><p>POSTECH</p></li>
-        <li><h4>Yanze Chen</h4><p>Zhejiang University</p></li>
+        <li><h4><a href="https://yifeizhao.com/">Yifei Zhao</a></h4><p>University of Münster · Lecture series</p></li>
+        <li><h4><a href="https://perso.imj-prg.fr/annemarie-aubert/">Anne-Marie Aubert</a></h4><p>CNRS · Sorbonne Université</p></li>
+        <li><h4><a href="https://buciumas.github.io/">Valentin Buciumas</a></h4><p>POSTECH</p></li>
+        <li><h4><a href="https://yanze-chen.github.io/">Yanze Chen</a></h4><p>Zhejiang University</p></li>
         <li><h4>Yangyu Fan</h4><p>Beijing Institute of Technology</p></li>
-        <li><h4>Volker Heiermann</h4><p>Aix-Marseille Université</p></li>
-        <li><h4>Edmund Karasiewicz</h4><p>National University of Singapore</p></li>
-        <li><h4>Wen-Wei Li</h4><p>Peking University · BICMR</p></li>
-        <li><h4>Caihua Luo</h4><p>CUHK-Shenzhen</p></li>
-        <li><h4>Sergey Lysenko</h4><p>Université de Lorraine</p></li>
-        <li><h4>Omer Offen</h4><p>Brandeis University</p></li>
-        <li><h4>Shiv Prakash Patel</h4><p>IIT Delhi</p></li>
-        <li><h4>Eitan Sayag</h4><p>Ben-Gurion University</p></li>
-        <li><h4>Daniel Skodlerack</h4><p>ShanghaiTech University</p></li>
-        <li><h4>Shuichiro Takeda</h4><p>Osaka University</p></li>
-        <li><h4>Chenyan Wu</h4><p>University of Melbourne</p></li>
-        <li><h4>Jiandi Zou</h4><p>Harbin Institute of Technology</p></li>
+        <li><h4><a href="https://heiermann.perso.math.cnrs.fr/">Volker Heiermann</a></h4><p>Aix-Marseille Université</p></li>
+        <li><h4><a href="https://sites.google.com/view/edmundkarasiewicz">Edmund Karasiewicz</a></h4><p>National University of Singapore</p></li>
+        <li><h4><a href="https://www.wwli.asia/">Wen-Wei Li</a></h4><p>Peking University · BICMR</p></li>
+        <li><h4><a href="https://sites.google.com/site/chluonus/home">Caihua Luo</a></h4><p>CUHK-Shenzhen</p></li>
+        <li><h4><a href="https://lysenko.perso.math.cnrs.fr/">Sergey Lysenko</a></h4><p>Université de Lorraine</p></li>
+        <li><h4><a href="https://offen.net.technion.ac.il/">Omer Offen</a></h4><p>Brandeis University</p></li>
+        <li><h4><a href="https://sites.google.com/view/shivprakashpatel">Shiv Prakash Patel</a></h4><p>IIT Delhi</p></li>
+        <li><h4><a href="https://www.math.bgu.ac.il/~sayage/">Eitan Sayag</a></h4><p>Ben-Gurion University</p></li>
+        <li><h4><a href="https://www.skodleracks.co.uk/">Daniel Skodlerack</a></h4><p>ShanghaiTech University</p></li>
+        <li><h4><a href="https://sites.google.com/view/stakeda/">Shuichiro Takeda</a></h4><p>Osaka University</p></li>
+        <li><h4><a href="https://cywu.github.io/">Chenyan Wu</a></h4><p>University of Melbourne</p></li>
+        <li><h4><a href="https://sites.google.com/view/jiandizou/">Jiandi Zou</a></h4><p>Harbin Institute of Technology</p></li>
       </ul>
     </div>
     <div class="roster">
       <h3>Other participants</h3>
       <ul class="roster-list">
-        <li><h4>Chengbo Zhu</h4><p>National University of Singapore</p></li>
-        <li><h4>Lei Zhang</h4><p>National University of Singapore</p></li>
-        <li><h4>Chi-Heng Lo</h4><p>National University of Singapore</p></li>
-        <li><h4>Kayue Daniel Wong</h4><p>CUHK-Shenzhen</p></li>
-        <li><h4>Rui Chen</h4><p>Zhejiang University</p></li>
-        <li><h4>Bin Xu</h4><p>Tsinghua University · YMSC</p></li>
-        <li><h4>Daxin Xu</h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
-        <li><h4>Jialiang Zou</h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
-        <li><h4>Ning Li</h4><p>Nankai University</p></li>
-        <li><h4>Lingfei Yi</h4><p>Shanghai Center for Mathematical Sciences · Fudan University</p></li>
-        <li><h4>Dongming She</h4><p>Beijing Institute of Mathematical Sciences and Applications</p></li>
-        <li><h4>Marcela Hanzer</h4><p>University of Zagreb</p></li>
+        <li><h4><a href="https://blog.nus.edu.sg/matzhucb/">Chengbo Zhu</a></h4><p>National University of Singapore</p></li>
+        <li><h4><a href="https://blog.nus.edu.sg/matzhlei/">Lei Zhang</a></h4><p>National University of Singapore</p></li>
+        <li><h4><a href="https://sites.google.com/view/chihenglo/home">Chi-Heng Lo</a></h4><p>National University of Singapore</p></li>
+        <li><h4><a href="https://kdwong.github.io/">Kayue Daniel Wong</a></h4><p>CUHK-Shenzhen</p></li>
+        <li><h4><a href="https://sato-sugar.github.io/rchenmat94/">Rui Chen</a></h4><p>Zhejiang University</p></li>
+        <li><h4><a href="https://sites.google.com/view/binxumath/home">Bin Xu</a></h4><p>Tsinghua University · YMSC</p></li>
+        <li><h4><a href="https://www.mcm.ac.cn/people/members/dxx/202601/t20260122_1146417.html">Daxin Xu</a></h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
+        <li><h4><a href="https://sites.google.com/umich.edu/jialiang-zou/home">Jialiang Zou</a></h4><p>Academy of Mathematics and Systems Science, CAS</p></li>
+        <li><h4><a href="https://my.nankai.edu.cn/sms/ln/list.htm">Ning Li</a></h4><p>Nankai University</p></li>
+        <li><h4><a href="https://sites.google.com/view/ylf/home">Lingfei Yi</a></h4><p>Shanghai Center for Mathematical Sciences · Fudan University</p></li>
+        <li><h4><a href="https://www.bimsa.cn/detail/DongmingShe.html">Dongming She</a></h4><p>Beijing Institute of Mathematical Sciences and Applications</p></li>
         <li><h4>Yiyang Wang</h4><p>Kyoto University</p></li>
-        <li><h4>Huajie Li</h4><p>Tsinghua University</p></li>
+        <li><h4><a href="https://ymsc.tsinghua.edu.cn/en/info/1033/3473.htm">Huajie Li</a></h4><p>Tsinghua University</p></li>
       </ul>
     </div>
   </div>
@@ -153,10 +152,10 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 <section class="people" id="organizers"><div class="wrap">
   <div class="section-head"><div class="section-number">05 · Organizers</div><h2>Organizing committee</h2></div>
   <div class="people-grid">
-    <article class="person"><h3>Gan Wee Teck</h3><p>National University of Singapore</p></article>
-    <article class="person"><h3>Fan Gao</h3><p>Zhejiang University</p></article>
-    <article class="person"><h3>Yifeng Liu</h3><p>Zhejiang University</p></article>
-    <article class="person"><h3>Jiajun Ma</h3><p>Xiamen University</p></article>
+    <article class="person"><h3><a href="https://ims.nus.edu.sg/staff/gan-wee-teck/">Gan Wee Teck</a></h3><p>National University of Singapore</p></article>
+    <article class="person"><h3><a href="https://sites.google.com/view/gaofan-zju/">Fan Gao</a></h3><p>Zhejiang University</p></article>
+    <article class="person"><h3><a href="https://liuyf0719.github.io/">Yifeng Liu</a></h3><p>Zhejiang University</p></article>
+    <article class="person"><h3><a href="https://www.majiajun.org/">Jiajun Ma</a></h3><p>Xiamen University</p></article>
   </div>
 </div></section>
 
