@@ -3,183 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Langlands Program for Covering Groups — Xiamen, Dec 2026</title>
-<meta name="description" content="International conference on the Langlands Program for Covering Groups, Tianyuan Mathematical Center in Southeast China, Xiamen University, 7–11 December 2026.">
+<title>Langlands Program for Covering Groups — Xiamen 2026</title>
+<meta name="description" content="Langlands Program for Covering Groups, an international conference at Xiamen University, 7–11 December 2026.">
 <style>
-  :root{
-    --ink:#1a1d23; --muted:#5b6472; --line:#e4e7ec; --bg:#fbfaf7; --card:#ffffff;
-    --accent:#0f5f66; --accent-soft:#e7f1f1;
-    --maxw:920px;
-    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-    line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-
-  /* nav */
-  nav{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.9);
-    backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
-  nav .brand{font-weight:600;font-size:15px;letter-spacing:.01em}
-  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14.5px}
-  nav a{color:var(--muted)}
-  nav a:hover{color:var(--accent);text-decoration:none}
-  @media(max-width:640px){nav ul{display:none}}
-
-  /* hero */
-  header.hero{padding:76px 0 60px;border-bottom:1px solid var(--line)}
-  .kicker{color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.14em;
-    text-transform:uppercase;margin:0 0 18px}
-  h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,5.4vw,3.4rem);
-    line-height:1.12;letter-spacing:-.01em;margin:0 0 24px;max-width:16ch}
-  .facts{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:8px;font-size:16px}
-  .facts .lab{display:block;color:var(--muted);font-size:12.5px;letter-spacing:.06em;
-    text-transform:uppercase;margin-bottom:3px}
-  .facts b{font-weight:600}
-
-  section{padding:56px 0;border-bottom:1px solid var(--line)}
-  h2{font-family:var(--serif);font-weight:600;font-size:1.55rem;margin:0 0 22px;letter-spacing:-.01em}
-  p{margin:0 0 16px;color:#333a45}
-  .lead{max-width:66ch}
-
-  /* speakers */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
-    padding:16px 18px}
-  .card .nm{font-weight:600;font-size:16px}
-  .card .aff{color:var(--muted);font-size:14px;margin-top:2px}
-  .tag{display:inline-block;margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.05em;
-    text-transform:uppercase;color:var(--accent);background:var(--accent-soft);
-    border-radius:20px;padding:3px 10px}
-  .note{color:var(--muted);font-size:14.5px;margin-top:18px}
-
-  /* organizers */
-  .orgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-  .org .nm{font-weight:600}
-  .org .aff{color:var(--muted);font-size:14.5px}
-
-  /* venue links */
-  .links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;font-size:15px}
-
-  .tba{display:inline-block;background:var(--accent-soft);color:var(--accent);
-    border-radius:8px;padding:8px 14px;font-size:14.5px;font-weight:600}
-
-  footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
-  footer a{color:var(--muted);text-decoration:underline}
-
-  @media(prefers-color-scheme:dark){
-    :root{--ink:#e8eaed;--muted:#9aa3b2;--line:#2a2f37;--bg:#14161a;--card:#1b1e24;
-      --accent:#5fd0d6;--accent-soft:#173033}
-    nav{background:rgba(20,22,26,.9)}
-    p{color:#c3c9d2}
-  }
+:root{
+  --navy:#102b3f;--navy-2:#1a4057;--teal:#168a8a;--aqua:#7fd3d0;--coral:#e77b5f;
+  --cream:#f4f0e7;--paper:#fffdf8;--ink:#142a36;--muted:#66757d;--line:#d7dedc;
+  --max:1180px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:0 auto}
+.skip{position:absolute;left:-9999px;top:12px;z-index:100}.skip:focus{left:16px;padding:8px 12px;background:#fff;color:var(--navy)}
+nav{position:absolute;inset:0 0 auto;z-index:10;color:#fff}
+nav .wrap{min-height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff33}
+.brand{font-size:.78rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}nav a{color:#ffffffd1;text-decoration:none;font-size:.9rem}nav a:hover{color:#fff}
+.hero{position:relative;isolation:isolate;min-height:700px;overflow:hidden;color:#fff;background:radial-gradient(circle at 82% 16%,#1fa2a061,transparent 30%),radial-gradient(circle at 65% 78%,#e77b5f38,transparent 27%),linear-gradient(135deg,#0b2234,var(--navy) 48%,#183f50)}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid #ffffff1f;border-radius:50%}
+.hero:before{width:620px;height:620px;right:-170px;top:70px}.hero:after{width:380px;height:380px;right:30px;top:190px}
+.hero-inner{min-height:700px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);align-items:end;gap:70px;padding:152px 0 78px}
+.eyebrow{margin:0 0 22px;color:var(--aqua);font-size:.75rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+h1{max-width:850px;margin:0;font:500 clamp(3.4rem,7vw,6.8rem)/.93 var(--serif);letter-spacing:-.045em}
+.hero-copy{max-width:660px;margin:30px 0 0;color:#ffffffb8;font-size:1.05rem}
+.hero-facts{display:grid;gap:12px}.hero-fact{padding:20px 22px;border:1px solid #ffffff30;background:#ffffff12;backdrop-filter:blur(10px)}
+.hero-fact span{display:block;margin-bottom:5px;color:var(--aqua);font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.hero-fact strong{display:block;font-size:1rem;font-weight:650;line-height:1.45}
+section{padding:96px 0}.section-head{display:grid;grid-template-columns:180px 1fr;gap:42px;margin-bottom:48px}
+.section-number{padding-top:9px;color:var(--teal);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-.035em}
+.intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:180px minmax(0,1.4fr) minmax(260px,.6fr);gap:42px;align-items:start}
+.intro h2{font-size:clamp(2rem,3.5vw,3.1rem)}.intro p{margin:0;color:#3f535c;font-size:1.08rem}
+.host{padding:24px;border-left:3px solid var(--coral);background:#ffffff8c}.host small{display:block;margin-bottom:8px;color:var(--muted);font-weight:750;letter-spacing:.12em;text-transform:uppercase}.host p{font-size:.95rem}
+.speaker-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.speaker{min-height:150px;padding:26px;background:var(--paper);transition:.2s}.speaker:hover{position:relative;z-index:1;background:#f7fbfa;transform:translateY(-2px)}
+.speaker small{color:var(--teal);font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.speaker h3{margin:15px 0 6px;font:500 1.38rem/1.2 var(--serif)}.speaker p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.45}
+.speaker.featured{background:var(--navy);color:#fff}.speaker.featured p{color:#ffffffa8}.speaker.featured small{color:var(--aqua)}.note{margin:24px 0 0;color:var(--muted);font-size:.88rem}
+.place{background:var(--cream)}.place-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.place-card{display:flex;min-height:310px;flex-direction:column;padding:30px;border:1px solid #cfd6d2;background:#fffdf8}
+.place-card .label{color:var(--teal);font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.place-card h3{margin:34px 0 14px;font:500 1.65rem/1.15 var(--serif)}.place-card p{margin:0 0 24px;color:#506169;font-size:.92rem}
+.place-card a{margin-top:auto;color:var(--teal);font-weight:700;text-decoration:none}.place-card a:hover{text-decoration:underline}
+.forthcoming{color:#fff;background:var(--navy)}.forthcoming .section-number{color:var(--aqua)}.tba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tba-card{min-height:210px;padding:26px;border:1px solid #ffffff2b;background:#ffffff0b}.status{color:var(--aqua);font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.tba-card h3{margin:34px 0 10px;font:500 1.45rem var(--serif)}.tba-card p{margin:0;color:#ffffff9e;font-size:.9rem}
+.people{background:var(--paper)}.people-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.person{padding-top:18px;border-top:2px solid var(--ink)}
+.person h3{margin:0 0 5px;font:500 1.2rem var(--serif)}.person p{margin:0;color:var(--muted);font-size:.84rem}
+.contact{padding:72px 0;color:#fff;background:var(--teal)}.contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px}.contact h2{max-width:650px;font-size:clamp(2rem,4vw,3.5rem)}
+.contact a{white-space:nowrap;padding:13px 20px;border:1px solid #ffffff8c;text-decoration:none;font-weight:650}.contact a:hover{background:#fff;color:var(--teal)}
+footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer .wrap{display:flex;justify-content:space-between;gap:24px}footer a{color:inherit}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.intro-grid{grid-template-columns:150px 1fr}.host{grid-column:2}.speaker-grid,.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.speaker-grid,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.section-head,.intro-grid{grid-template-columns:1fr;gap:18px}.host{grid-column:auto}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
 </style>
 </head>
 <body>
-
-<nav><div class="wrap">
-  <span class="brand">Covering Groups · Xiamen 2026</span>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#speakers">Speakers</a></li>
-    <li><a href="#program">Program</a></li>
-    <li><a href="#venue">Venue</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<a class="skip" href="#main">Skip to main content</a>
+<nav aria-label="Main navigation"><div class="wrap">
+  <span class="brand">Xiamen · 2026</span>
+  <ul><li><a href="#about">About</a></li><li><a href="#speakers">Participants</a></li><li><a href="#place">Place</a></li><li><a href="#program">Program</a></li><li><a href="#organizers">Organizers</a></li></ul>
 </div></nav>
 
-<header class="hero"><div class="wrap">
-  <p class="kicker">International Conference</p>
-  <h1>Langlands Program for Covering Groups</h1>
-  <div class="facts">
-    <div><span class="lab">Dates</span><b>7 – 11 December 2026</b> (Mon – Fri)</div>
-    <div><span class="lab">Venue</span><b>Tianyuan Mathematical Center in Southeast China</b><br>Xiamen University, Xiamen, China</div>
+<header class="hero"><div class="wrap hero-inner">
+  <div>
+    <p class="eyebrow">International Conference</p>
+    <h1>Langlands Program for Covering Groups</h1>
+    <p class="hero-copy">A focused meeting on recent developments in the Langlands program for covering groups.</p>
+  </div>
+  <div class="hero-facts" role="group" aria-label="Conference details">
+    <div class="hero-fact"><span>When</span><strong>7–11 December 2026<br>Monday–Friday</strong></div>
+    <div class="hero-fact"><span>Where</span><strong>Tianyuan Mathematical Center in Southeast China<br>Xiamen University · No. 1 Zengcuo'an West Road, Xiamen, China</strong></div>
   </div>
 </div></header>
 
-<section id="about"><div class="wrap">
-  <h2>About the conference</h2>
-  <p class="lead">The theory of covering groups has become an important branch of the Langlands
-  program, with significant recent progress on both the classical (number-field) and the
-  geometric (function-field) sides.</p>
-  <p class="lead">This conference brings together researchers from around the world to discuss the
-  development of the theory of covering groups. It is hosted by the
-  <a href="https://tianyuan.xmu.edu.cn/index.aspx">Tianyuan Mathematical Center in Southeast China</a>
-  at <a href="https://en.xmu.edu.cn">Xiamen University</a>, one of the national mathematics centers
-  established with the support of the National Natural Science Foundation of China.</p>
+<main id="main">
+<section class="intro" id="about"><div class="wrap intro-grid">
+  <div class="section-number">01 · About</div>
+  <div><h2>Covering groups and the Langlands program</h2><p>The conference brings together researchers working on the classical and geometric aspects of covering groups, creating a forum for lectures, research talks, and discussion.</p></div>
+  <div class="host"><small>Hosted by</small><p><a href="https://tianyuan.xmu.edu.cn/">Tianyuan Mathematical Center in Southeast China</a><br>Xiamen University</p></div>
 </div></section>
 
 <section id="speakers"><div class="wrap">
-  <h2>Confirmed speakers</h2>
-  <div class="grid">
-    <div class="card"><div class="nm">Yifei Zhao</div><div class="aff">University of Münster</div><span class="tag">Lecture series</span></div>
-    <div class="card"><div class="nm">Wen-Wei Li</div><div class="aff">Peking University · BICMR</div></div>
-    <div class="card"><div class="nm">Caihua Luo</div><div class="aff">CUHK-Shenzhen</div></div>
-    <div class="card"><div class="nm">Sergey Lysenko</div><div class="aff">Université de Lorraine</div></div>
-    <div class="card"><div class="nm">Shiv Prakash Patel</div><div class="aff">IIT Delhi</div></div>
-    <div class="card"><div class="nm">Anne-Marie Aubert</div><div class="aff">CNRS · Sorbonne Université</div></div>
-    <div class="card"><div class="nm">Eitan Sayag</div><div class="aff">Ben-Gurion University</div></div>
-    <div class="card"><div class="nm">Shuichiro Takeda</div><div class="aff">Osaka University</div></div>
-    <div class="card"><div class="nm">Chenyan Wu</div><div class="aff">University of Melbourne</div></div>
-    <div class="card"><div class="nm">Volker Heiermann</div><div class="aff">Aix-Marseille Université</div></div>
-    <div class="card"><div class="nm">Edmund Karasiewicz</div><div class="aff">National University of Singapore</div></div>
-    <div class="card"><div class="nm">Valentin Buciumas</div><div class="aff">POSTECH</div></div>
-    <div class="card"><div class="nm">Jiandi Zou</div><div class="aff">Harbin Institute of Technology</div></div>
-    <div class="card"><div class="nm">Yanze Chen</div><div class="aff">Zhejiang University</div></div>
-    <div class="card"><div class="nm">Yangyu Fan</div><div class="aff">Beijing Institute of Technology</div></div>
-    <div class="card"><div class="nm">Omer Offen</div><div class="aff">Brandeis University</div></div>
-    <div class="card"><div class="nm">Daniel Skodlerack</div><div class="aff">ShanghaiTech University</div></div>
-    <div class="card"><div class="nm">Dani Szpruch</div><div class="aff">The Open University of Israel</div></div>
-    <div class="card"><div class="nm">Chung Pang Mok</div><div class="aff">Shanghai Institute for Mathematics and Interdisciplinary Sciences</div></div>
+  <div class="section-head"><div class="section-number">02 · People</div><h2>Confirmed participants &amp; speakers</h2></div>
+  <div class="speaker-grid">
+    <article class="speaker featured"><small>Lecture series</small><h3>Yifei Zhao</h3><p>University of Münster</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Anne-Marie Aubert</h3><p>CNRS · Sorbonne Université</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Valentin Buciumas</h3><p>POSTECH</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Yanze Chen</h3><p>Zhejiang University</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Yangyu Fan</h3><p>Beijing Institute of Technology</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Volker Heiermann</h3><p>Aix-Marseille Université</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Edmund Karasiewicz</h3><p>National University of Singapore</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Wen-Wei Li</h3><p>Peking University · BICMR</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Caihua Luo</h3><p>CUHK-Shenzhen</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Sergey Lysenko</h3><p>Université de Lorraine</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Chung Pang Mok</h3><p>Shanghai Institute for Mathematics and Interdisciplinary Sciences</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Omer Offen</h3><p>Brandeis University</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Shiv Prakash Patel</h3><p>IIT Delhi</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Eitan Sayag</h3><p>Ben-Gurion University</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Daniel Skodlerack</h3><p>ShanghaiTech University</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Dani Szpruch</h3><p>The Open University of Israel</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Shuichiro Takeda</h3><p>Osaka University</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Chenyan Wu</h3><p>University of Melbourne</p></article>
+    <article class="speaker"><small>Confirmed</small><h3>Jiandi Zou</h3><p>Harbin Institute of Technology</p></article>
   </div>
-  <p class="note">The speaker list will be updated as the program is finalized.</p>
+  <p class="note">This public list contains confirmed speakers and will be updated as the program is finalized.</p>
 </div></section>
 
-<section id="program"><div class="wrap">
-  <h2>Program</h2>
-  <p>The conference runs from Monday 7 December to Friday 11 December 2026, with registration
-  on the morning of 7 December.</p>
-  <span class="tba">Detailed schedule — to be announced</span>
-</div></section>
-
-<section id="venue"><div class="wrap">
-  <h2>Venue &amp; travel</h2>
-  <p class="lead">The conference is held at the Tianyuan Mathematical Center in Southeast China,
-  on the campus of Xiamen University. Xiamen is a subtropical coastal city in Fujian Province,
-  well connected by a major international airport and high-speed rail. Early December in Xiamen
-  is pleasant and mild.</p>
-  <div class="links">
-    <a href="https://tianyuan.xmu.edu.cn/index.aspx">Tianyuan Mathematical Center →</a>
-    <a href="https://math.xmu.edu.cn/en/">School of Mathematical Sciences →</a>
-    <a href="https://en.xmu.edu.cn">Xiamen University →</a>
+<section class="place" id="place"><div class="wrap">
+  <div class="section-head"><div class="section-number">03 · Place</div><h2>The host city &amp; institutions</h2></div>
+  <div class="place-grid">
+    <article class="place-card"><span class="label">Host center</span><h3>Tianyuan Mathematical Center in Southeast China</h3><p>Based at Xiamen University, TMSE is one of five national mathematical centers supported by the Tianyuan Mathematics Fund of the National Natural Science Foundation of China.</p><a href="https://tianyuan.xmu.edu.cn/">Visit the center →</a></article>
+    <article class="place-card"><span class="label">Host university</span><h3>Xiamen University</h3><p>Founded in 1921 by Tan Kah Kee, Xiamen University is a leading comprehensive university with a long tradition of research and international exchange.</p><a href="https://en.xmu.edu.cn/info/1046/19152.htm">About Xiamen University →</a></article>
+    <article class="place-card"><span class="label">Host city</span><h3>Xiamen</h3><p>A coastal city in Fujian Province, Xiamen is a historic trading port and an international gateway on China's southeast coast.</p><a href="https://www.xm.gov.cn/english/">About Xiamen →</a></article>
   </div>
 </div></section>
 
-<section id="organizers"><div class="wrap">
-  <h2>Organizing committee</h2>
-  <div class="orgs">
-    <div class="org"><div class="nm">Gan Wee Teck</div><div class="aff">National University of Singapore</div></div>
-    <div class="org"><div class="nm">Fan Gao</div><div class="aff">Zhejiang University</div></div>
-    <div class="org"><div class="nm">Yifeng Liu</div><div class="aff">Zhejiang University</div></div>
-    <div class="org"><div class="nm">Jiajun Ma</div><div class="aff">Xiamen University</div></div>
+<section class="forthcoming" id="program"><div class="wrap">
+  <div class="section-head"><div class="section-number">04 · Forthcoming</div><h2>More details will follow</h2></div>
+  <div class="tba-grid">
+    <article class="tba-card"><span class="status">TBA</span><h3>Program</h3><p>The daily schedule and session times will be announced.</p></article>
+    <article class="tba-card"><span class="status">TBA</span><h3>Talk titles &amp; abstracts</h3><p>Titles and abstracts will be published after they are finalized.</p></article>
+    <article class="tba-card"><span class="status">TBA</span><h3>Practical information</h3><p>Registration, accommodation, and travel guidance will be added here.</p></article>
   </div>
 </div></section>
 
-<section id="contact"><div class="wrap">
-  <h2>Contact</h2>
-  <p>For any enquiries, please write to the organizers at
-  <a href="mailto:2026xmucoveringgroup@gmail.com">2026xmucoveringgroup@gmail.com</a>.</p>
+<section class="people" id="organizers"><div class="wrap">
+  <div class="section-head"><div class="section-number">05 · Organizers</div><h2>Organizing committee</h2></div>
+  <div class="people-grid">
+    <article class="person"><h3>Gan Wee Teck</h3><p>National University of Singapore</p></article>
+    <article class="person"><h3>Fan Gao</h3><p>Zhejiang University</p></article>
+    <article class="person"><h3>Yifeng Liu</h3><p>Zhejiang University</p></article>
+    <article class="person"><h3>Jiajun Ma</h3><p>Xiamen University</p></article>
+  </div>
 </div></section>
 
-<footer><div class="wrap">
-  Langlands Program for Covering Groups · Xiamen University, 7–11 December 2026 ·
-  Hosted by the <a href="https://tianyuan.xmu.edu.cn/index.aspx">Tianyuan Mathematical Center in Southeast China</a>.
-</div></footer>
-
+<section class="contact" id="contact"><div class="wrap"><h2>Questions about the conference?</h2><a href="mailto:2026xmucoveringgroup@gmail.com">Contact the organizers</a></div></section>
+</main>
+<footer><div class="wrap"><span>Langlands Program for Covering Groups · 7–11 December 2026</span><span><a href="https://en.xmu.edu.cn">Xiamen University</a> · Xiamen, China</span></div></footer>
 </body>
 </html>
