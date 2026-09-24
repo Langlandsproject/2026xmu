@@ -33,10 +33,9 @@ h1{max-width:850px;margin:0;font:500 clamp(3.4rem,7vw,6.8rem)/.93 var(--serif);l
 .institution-strip{padding:30px 0;border-bottom:1px solid var(--line);background:#fff}
 .institution-strip .wrap{display:grid;max-width:700px;grid-template-columns:repeat(3,1fr);align-items:center;gap:clamp(24px,6vw,72px)}
 .institution-logo{display:flex;align-items:center;justify-content:center}.institution-logo img{display:block;width:clamp(76px,9vw,104px);height:auto;aspect-ratio:1;object-fit:contain}
-section{padding:96px 0}.section-head{display:grid;grid-template-columns:180px 1fr;gap:42px;margin-bottom:48px}
-.section-number{padding-top:9px;color:var(--teal);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+section{padding:96px 0}.section-head{margin-bottom:48px}
 h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-.035em}
-.intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:180px minmax(0,1.4fr) minmax(260px,.6fr);gap:42px;align-items:start}
+.intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:42px;align-items:start}
 .intro h2{font-size:clamp(2rem,3.5vw,3.1rem)}.intro p{margin:0;color:#3f535c;font-size:1.08rem}
 .host{padding:24px;border-left:3px solid var(--coral);background:#ffffff8c}.host small{display:block;margin-bottom:8px;color:var(--muted);font-weight:750;letter-spacing:.12em;text-transform:uppercase}.host p{font-size:.95rem}
 .participant-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px;align-items:start}
@@ -47,7 +46,7 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .place-card{display:flex;min-height:310px;flex-direction:column;padding:30px;border:1px solid #cfd6d2;background:#fffdf8}
 .place-card h3{margin:0 0 14px;font:500 1.65rem/1.15 var(--serif)}.place-card p{margin:0 0 24px;color:#506169;font-size:.92rem}
 .place-card a{margin-top:auto;color:var(--teal);font-weight:700;text-decoration:none}.place-card a:hover{text-decoration:underline}
-.forthcoming{color:#fff;background:var(--navy)}.forthcoming .section-number{color:var(--aqua)}.tba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.forthcoming{color:#fff;background:var(--navy)}.tba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .tba-card{min-height:210px;padding:26px;border:1px solid #ffffff2b;background:#ffffff0b}.status{color:var(--aqua);font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 .tba-card h3{margin:34px 0 10px;font:500 1.45rem var(--serif)}.tba-card p{margin:0;color:#ffffff9e;font-size:.9rem}
 .people{background:var(--paper)}.people-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.person{padding-top:18px;border-top:2px solid var(--ink)}
@@ -55,8 +54,8 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .contact{padding:72px 0;color:#fff;background:var(--teal)}.contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px}.contact h2{max-width:650px;font-size:clamp(2rem,4vw,3.5rem)}
 .contact a{white-space:nowrap;padding:13px 20px;border:1px solid #ffffff8c;text-decoration:none;font-weight:650}.contact a:hover{background:#fff;color:var(--teal)}
 footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer .wrap{display:flex;justify-content:space-between;gap:24px}footer a{color:inherit}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.intro-grid{grid-template-columns:150px 1fr}.host{grid-column:2}.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.participant-columns,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.section-head,.intro-grid{grid-template-columns:1fr;gap:18px}.host{grid-column:auto}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.intro-grid,.participant-columns,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.intro-grid{gap:18px}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
 </style>
 </head>
 <body>
@@ -79,13 +78,12 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 
 <main id="main">
 <section class="intro" id="about"><div class="wrap intro-grid">
-  <div class="section-number">About</div>
   <div><h2>Covering groups and the Langlands program</h2><p>The conference brings together researchers working on the classical and geometric aspects of covering groups, creating a forum for lectures, research talks, and discussion.</p></div>
   <div class="host"><small>Hosted by</small><p><a href="https://tianyuan.xmu.edu.cn/">Tianyuan Mathematical Center in Southeast China</a><br>Xiamen University</p></div>
 </div></section>
 
 <section id="speakers"><div class="wrap">
-  <div class="section-head"><div class="section-number">People</div><h2>Participants &amp; speakers</h2></div>
+  <div class="section-head"><h2>Participants &amp; speakers</h2></div>
   <div class="participant-columns">
     <div class="roster">
       <h3>Confirmed speakers</h3>
@@ -132,7 +130,7 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 </div></section>
 
 <section class="place" id="place"><div class="wrap">
-  <div class="section-head"><div class="section-number">Place</div><h2>The host city &amp; institutions</h2></div>
+  <div class="section-head"><h2>The host city &amp; institutions</h2></div>
   <div class="place-grid">
     <article class="place-card"><h3>Tianyuan Mathematical Center in Southeast China</h3><p>Based at Xiamen University, TMSE is one of five national mathematical centers supported by the Tianyuan Mathematics Fund of the National Natural Science Foundation of China.</p><a href="https://tianyuan.xmu.edu.cn/">Visit the center →</a></article>
     <article class="place-card"><h3>Xiamen University</h3><p>Founded in 1921 by Tan Kah Kee, Xiamen University is a leading comprehensive university with a long tradition of research and international exchange.</p><a href="https://en.xmu.edu.cn/info/1046/19152.htm">About Xiamen University →</a></article>
@@ -141,7 +139,7 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 </div></section>
 
 <section class="forthcoming" id="program"><div class="wrap">
-  <div class="section-head"><div class="section-number">Forthcoming</div><h2>More details will follow</h2></div>
+  <div class="section-head"><h2>More details will follow</h2></div>
   <div class="tba-grid">
     <article class="tba-card"><span class="status">TBA</span><h3>Program</h3><p>The daily schedule and session times will be announced.</p></article>
     <article class="tba-card"><span class="status">TBA</span><h3>Talk titles &amp; abstracts</h3><p>Titles and abstracts will be published after they are finalized.</p></article>
@@ -150,7 +148,7 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 </div></section>
 
 <section class="people" id="organizers"><div class="wrap">
-  <div class="section-head"><div class="section-number">Organizers</div><h2>Organizing committee</h2></div>
+  <div class="section-head"><h2>Organizing committee</h2></div>
   <div class="people-grid">
     <article class="person"><h3><a href="https://ims.nus.edu.sg/staff/gan-wee-teck/">Gan Wee Teck</a></h3><p>National University of Singapore</p></article>
     <article class="person"><h3><a href="https://sites.google.com/view/gaofan-zju/">Fan Gao</a></h3><p>Zhejiang University</p></article>
