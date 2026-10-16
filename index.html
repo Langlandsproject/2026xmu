@@ -54,7 +54,7 @@ h2{margin:0;font:500 clamp(2.2rem,4.5vw,4rem)/1.05 var(--serif);letter-spacing:-
 .contact{padding:72px 0;color:#fff;background:var(--teal)}.contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px}.contact h2{max-width:650px;font-size:clamp(2rem,4vw,3.5rem)}
 .contact a{white-space:nowrap;padding:13px 20px;border:1px solid #ffffff8c;text-decoration:none;font-weight:650}.contact a:hover{background:#fff;color:var(--teal)}
 footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer .wrap{display:flex;justify-content:space-between;gap:24px}footer a{color:inherit}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){nav .wrap{flex-wrap:wrap;gap:12px;padding:16px 0}nav ul{flex-wrap:wrap;gap:16px}.hero-inner{grid-template-columns:1fr;gap:42px}.hero-facts{grid-template-columns:1fr 1fr}.place-grid,.tba-grid{grid-template-columns:repeat(2,1fr)}.people-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}nav ul{display:none}.hero,.hero-inner{min-height:760px}.hero-inner{padding-top:130px}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-facts,.intro-grid,.participant-columns,.place-grid,.tba-grid,.people-grid{grid-template-columns:1fr}section{padding:72px 0}.intro-grid{gap:18px}.contact .wrap,footer .wrap{align-items:flex-start;flex-direction:column}.contact a{white-space:normal}}
 </style>
 </head>
@@ -62,7 +62,7 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
 <a class="skip" href="#main">Skip to main content</a>
 <nav aria-label="Main navigation"><div class="wrap">
   <span class="brand">Xiamen · 2026</span>
-  <ul><li><a href="#about">About</a></li><li><a href="#speakers">Participants</a></li><li><a href="#place">Place</a></li><li><a href="#program">Program</a></li><li><a href="#organizers">Organizers</a></li></ul>
+  <ul><li><a href="#about">About</a></li><li><a href="#speakers">Participants</a></li><li><a href="#place">Place</a></li><li><a href="#lodging">Lodging</a></li><li><a href="#program">Program</a></li><li><a href="#organizers">Organizers</a></li></ul>
 </div></nav>
 
 <header class="hero"><div class="wrap hero-inner">
@@ -104,8 +104,6 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
         <li><h4><a href="https://www.skodleracks.co.uk/">Daniel Skodlerack</a></h4><p>ShanghaiTech University</p></li>
         <li><h4><a href="https://sites.google.com/view/stakeda/">Shuichiro Takeda</a></h4><p>Osaka University</p></li>
         <li><h4><a href="https://cywu.github.io/">Chenyan Wu</a></h4><p>University of Melbourne</p></li>
-        <li><h4><a href="https://sites.google.com/view/jiandizou/">Jiandi Zou</a></h4><p>Harbin Institute of Technology</p></li>
-        <li><h4><a href="https://www.pmf.unizg.hr/math/en/marcela.hanzer">Marcela Hanzer</a></h4><p>University of Zagreb</p></li>
         <li><h4><a href="https://www.math.cuhk.edu.hk/alumni/mok-chung-pang">Chung Pang Mok</a></h4><p>Shanghai Institute for Mathematics and Interdisciplinary Sciences</p></li>
         <li><h4><a href="https://sites.google.com/site/daniszpruch/">Dani Szpruch</a></h4><p>The Open University of Israel</p></li>
         <li><h4><a href="https://www.math.uni-bonn.de/people/fintzen/">Jessica Fintzen</a></h4><p>University of Bonn</p></li>
@@ -130,11 +128,16 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
         <li><h4><a href="https://ymsc.tsinghua.edu.cn/en/info/1033/3473.htm">Huajie Li</a></h4><p>Tsinghua University</p></li>
         <li><h4><a href="https://masonlvhf.github.io/Hengfei/">Hengfei Lu</a></h4><p>Beihang University</p></li>
         <li><h4><a href="https://www.au.dk/en/show/person/le.nhathoang%40math.au.dk">Le Nhat Hoang</a></h4><p>Aarhus University</p></li>
-        <li><h4><a href="https://kazumaoharamath.github.io/">Kazuma Ohara</a></h4><p>Max Planck Institute for Mathematics</p></li>
+        <li><h4><a href="https://kazumaoharamath.github.io/">Kazuma Ohara</a></h4><p>University of Bonn</p></li>
         <li><h4><a href="https://glucklichrui.github.io/">Rui Chen</a></h4><p>Johns Hopkins University</p></li>
         <li><h4><a href="https://www.suss.edu.sg/academics/schools-college/faculty-listing/detail/lau-jing-feng">Lau Jing Feng</a></h4><p>Singapore University of Social Sciences</p></li>
         <li><h4>Li Cai</h4><p>Capital Normal University</p></li>
         <li><h4><a href="https://nadirmatringe.github.io/">Nadir Matringe</a></h4><p>Shanghai Institute for Mathematics and Interdisciplinary Sciences</p></li>
+        <li><h4><a href="https://sites.google.com/view/jiandizou/">Jiandi Zou</a></h4><p>Harbin Institute of Technology</p></li>
+        <li><h4><a href="https://www.pmf.unizg.hr/math/en/marcela.hanzer">Marcela Hanzer</a></h4><p>University of Zagreb</p></li>
+        <li><h4>Jiu-Kang Yu</h4><p>Hetao Institute of Mathematics and Interdisciplinary Sciences</p></li>
+        <li><h4>Taiwang Deng</h4><p>Beijing Institute of Mathematical Sciences and Applications</p></li>
+        <li><h4>Yi-Yang Zhang</h4><p>Zhejiang University</p></li>
       </ul>
     </div>
   </div>
@@ -150,12 +153,17 @@ footer{padding:28px 0;color:#ffffff9e;background:#091c29;font-size:.78rem}footer
   </div>
 </div></section>
 
+<section id="lodging"><div class="wrap intro-grid">
+  <div><h2>Lodging</h2><h3>Xiamen Lujiang Mega Hotel<br><span lang="zh-CN">厦门鹭江·佲家酒店</span></h3><p>No. 382 Longhushan Road, Siming District, Xiamen<br><span lang="zh-CN">厦门市思明区龙虎山路382号</span></p><p><a href="https://www.trip.com/hotels/xiamen-hotel-detail-7123043/lujiang-mega-hotel/">Hotel information →</a></p></div>
+  <div class="host"><p>The organizers will make a group reservation for conference participants. Please do not book a room independently.</p><p>Please provide your arrival and departure dates using the participant information form sent by email. If you cannot access the form, or your plans change, please <a href="mailto:2026xmucoveringgroup@gmail.com">contact the organizers</a>.</p></div>
+</div></section>
+
 <section class="forthcoming" id="program"><div class="wrap">
   <div class="section-head"><h2>More details will follow</h2></div>
   <div class="tba-grid">
     <article class="tba-card"><span class="status">TBA</span><h3>Program</h3><p>The daily schedule and session times will be announced.</p></article>
     <article class="tba-card"><span class="status">TBA</span><h3>Talk titles &amp; abstracts</h3><p>Titles and abstracts will be published after they are finalized.</p></article>
-    <article class="tba-card"><span class="status">TBA</span><h3>Practical information</h3><p>Registration, accommodation, and travel guidance will be added here.</p></article>
+    <article class="tba-card"><span class="status">TBA</span><h3>Travel guidance</h3><p>Directions to the conference venue and local transport information will be announced.</p></article>
   </div>
 </div></section>
 
