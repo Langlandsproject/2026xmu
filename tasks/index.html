@@ -16,20 +16,8 @@
 <main class="wrap" id="main">
 <h1>Mathematical Knowledge Base Development and Formalization</h1>
 <p class="lead">Develop a knowledge base for covering groups, with AI-assisted mathematical exposition and Lean-checked proofs.</p>
-<section id="knowledge-base" aria-labelledby="knowledge-base-title">
-<h2 id="knowledge-base-title">Knowledge-base requirements</h2>
-<ol>
-<li><p><strong>Main theorems and their proofs.</strong> State the main theorems with explicit hypotheses, conclusions and source references. Provide a readable mathematical proof and a checked Lean proof of each theorem, and verify that the written and formal statements agree. Encode definitions directly, take chosen objects as input data, and prove the well-definedness and properties of constructions where required. Link the Lean declarations and record the checked revision, dependencies and axioms. Retain the assumptions of conditional results and distinguish them from conjectures.</p></li>
-<li><p><strong>Generality.</strong> State definitions and results in the greatest generality supported by the arguments. Keep parameters explicit, identify where each assumption enters the proof, and derive important special cases from the general results.</p></li>
-<li><p><strong>Consistent notation and conventions.</strong> Use a consistent set of notation and conventions throughout the exposition and Lean code. Explain how alternative formulations relate, including the equivalences or comparison maps needed to move between them.</p></li>
-<li><p><strong>Reusable Lean interfaces and extensible type design.</strong> Build one coherent library on mathlib's types, structures and theorems, following its notation and API conventions. Choose general data structures and reusable interfaces that keep routine constructions and theorem applications simple. Use structures, typeclasses and explicit parameters according to their roles, keeping instance inference predictable and coercions coherent. Make multiple inheritance paths to the same structure agree definitionally to avoid conflicting instance diamonds. Check the design on representative examples and extensions.</p></li>
-<li><p><strong>Explanations, examples and applications.</strong> Explain what the main definitions capture. Introduce the idea of a proof before its details and work out significant calculations. Include worked examples and applications showing how the results can be used in further arguments.</p></li>
-<li><p><strong>Linked concepts and layered navigation.</strong> Make every mathematical concept in a statement clickable, with symbols and hypotheses linked to the definitions and conventions used there. Let readers move from a short explanation to full definitions, examples and prerequisite material. Provide direct links to proofs and Lean code. Show each page's place in the topic, its connections to other results and a clear route back to the original statement.</p></li>
-<li><p><strong>Attribution, historical context and references.</strong> For important theorems, name the people who proved them and explain their place in the development of the subject, including later generalizations and corrections. Give full references with authors, titles, publication details, page or theorem locations, editions and DOI links. Identify contributors to the exposition and Lean formalization as well.</p></li>
-</ol>
-</section>
-<p>Tasks are listed in decreasing order of priority.</p>
 <p>Task 1 concerns the structural foundations of covering groups, while Tasks 2 and 3 center on Shimura liftings involving harmonic-analytic tools. This selection is inevitably shaped by our interests and represents only a small part of the literature on the Langlands program for covering groups. We hope it will stimulate further work in this direction.</p>
+<p>Tasks are listed in decreasing order of priority.</p>
 <div class="tasks">
 <details class="task" id="bd">
 <summary><h2>Task 1: Brylinski–Deligne, Weissman and Yifei Zhao — Covers of general reductive groups and the principal-block local Langlands correspondence</h2></summary>
@@ -87,6 +75,18 @@
 </div>
 </details>
 </div>
+<section id="knowledge-base" aria-labelledby="knowledge-base-title">
+<h2 id="knowledge-base-title">Knowledge-base requirements</h2>
+<ol>
+<li><p><strong>Main theorems and their proofs.</strong> State the main theorems with explicit hypotheses, conclusions and source references. Provide a readable mathematical proof and a checked Lean proof of each theorem, and verify that the written and formal statements agree. Encode definitions directly, take chosen objects as input data, and prove the well-definedness and properties of constructions where required. Link the Lean declarations and record the checked revision, dependencies and axioms. Retain the assumptions of conditional results and distinguish them from conjectures.</p></li>
+<li><p><strong>Generality.</strong> State definitions and results in the greatest generality supported by the arguments. Keep parameters explicit, identify where each assumption enters the proof, and derive important special cases from the general results.</p></li>
+<li><p><strong>Consistent notation and conventions.</strong> Use a consistent set of notation and conventions throughout the exposition and Lean code. Explain how alternative formulations relate, including the equivalences or comparison maps needed to move between them.</p></li>
+<li><p><strong>Reusable Lean interfaces and extensible type design.</strong> Build one coherent library on mathlib's types, structures and theorems, following its notation and API conventions. Choose general data structures and reusable interfaces that keep routine constructions and theorem applications simple. Use structures, typeclasses and explicit parameters according to their roles, keeping instance inference predictable and coercions coherent. Make multiple inheritance paths to the same structure agree definitionally to avoid conflicting instance diamonds. Check the design on representative examples and extensions.</p></li>
+<li><p><strong>Explanations, examples and applications.</strong> Explain what the main definitions capture. Introduce the idea of a proof before its details and work out significant calculations. Include worked examples and applications showing how the results can be used in further arguments.</p></li>
+<li><p><strong>Linked concepts and layered navigation.</strong> Make every mathematical concept in a statement clickable, with symbols and hypotheses linked to the definitions and conventions used there. Let readers move from a short explanation to full definitions, examples and prerequisite material. Provide direct links to proofs and Lean code. Show each page's place in the topic, its connections to other results and a clear route back to the original statement.</p></li>
+<li><p><strong>Attribution, historical context and references.</strong> For important theorems, name the people who proved them and explain their place in the development of the subject, including later generalizations and corrections. Give full references with authors, titles, publication details, page or theorem locations, editions and DOI links. Identify contributors to the exposition and Lean formalization as well.</p></li>
+</ol>
+</section>
 </main>
 <footer><div class="wrap">Langlands Program for Covering Groups · Xiamen University · 7–11 December 2026</div></footer>
 </body>
