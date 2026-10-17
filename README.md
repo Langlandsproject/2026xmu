@@ -9,12 +9,14 @@ held at the **Tianyuan Mathematical Center in Southeast China**, Xiamen Universi
 
 ## Structure
 
-A single static page (`index.html`, self-contained HTML + CSS, no build step) with image assets in `assets/`. Sections:
+A static conference page (`index.html`, self-contained HTML + CSS, no build step) with image assets in `assets/`. Sections:
 About · Participants and speakers · Host city and institutions · Lodging · Program (TBA) · Organizing committee · Contact.
+
+`tasks/index.html` is the AI-assisted research tasks overview. Four task pages and `tasks/knowledge-base.html` contain the mathematical briefs, shared requirements and bibliographic links. Their shared styles are in `assets/tasks.css`. These pages describe proposed research and formalization work, not completed Lean results.
 
 ## Editing
 
-Edit `index.html` and the files under `assets/` directly, then push to `main`; GitHub Pages redeploys automatically.
+Edit `index.html`, `tasks/*.html` and the files under `assets/` directly, then push to `main`; GitHub Pages redeploys automatically. Publish only the public task text and bibliographic links; source-paper PDFs and private participant records stay outside this repository.
 
 ## Organizing committee
 
