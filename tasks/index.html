@@ -31,35 +31,22 @@
 <li><p><strong>Attribution, historical context and references.</strong> For important theorems, name the people who proved them and explain their place in the development of the subject, including later generalizations and corrections. Give full references with authors, titles, publication details, page or theorem locations, editions and DOI links. Identify contributors to the exposition and Lean formalization as well.</p></li>
 </ol>
 </section>
-<p>Tasks 1–4 below are learning and formalization goals, listed in decreasing order of priority.</p>
+<p>Tasks 1–3 below are learning and formalization goals, listed in decreasing order of priority.</p>
 <div class="tasks">
 <details class="task" id="bd">
 <summary><h2>Task 1: Brylinski–Deligne, Weissman and Yifei Zhao — Covers of general reductive groups and the principal-block local Langlands correspondence</h2></summary>
 <div class="task-body">
-<p>Learn and formalize the theory of covering groups for general reductive groups through Brylinski–Deligne central extensions, Weissman’s L-groups and Yifei Zhao’s étale metaplectic covers, and study the local Langlands correspondence (LLC) for the genuine principal block. Include local and adelic realizations and Iwahori/Hecke theory, with the field, base-scheme, coefficient, splitting and ramification hypotheses stated explicitly.</p>
-<p>The core formalization targets are <a href="https://doi.org/10.1007/s10240-001-8192-2">Brylinski–Deligne’s classification of central extensions by K2</a>, <a href="https://doi.org/10.24033/ast.1046">Weissman’s construction of L-groups and parameters</a>, and <a href="https://doi.org/10.4171/JEMS/1596">Yifei Zhao’s construction and classification of étale metaplectic covers and their dual data</a>. The related work of <a href="https://arxiv.org/abs/2506.08696">Luozi Shi and Yifei Zhao on extended pure inner forms of covers</a> provides further constructions and theorems on inner forms and Weissman’s obstruction to formalize.</p>
-<p>Supplementary formalization targets include <a href="https://doi.org/10.24033/ast.1047">Gan–Gao’s treatment of the Langlands–Weissman programme</a> and <a href="https://doi.org/10.1007/978-0-8176-8334-4_13">McNamara’s work on principal series and Satake theory</a>.</p>
-<h3 id="bd-main-theorem-targets">Main theorem targets</h3>
-<ol>
-<li><p><strong>Brylinski–Deligne classification theorem.</strong> Formalize the equivalence between the category of multiplicative K2-torsors on a reductive group and the category of quadratic-form, lattice-extension and compatibility data. The target is the categorical classification, including morphisms and descent, as in <a href="https://doi.org/10.1007/s10240-001-8192-2">Theorem 7.2</a>, with its regular-base hypotheses.</p></li>
-<li><p><strong>Yifei Zhao’s étale classification theorem.</strong> Formalize the linear-algebraic classification of the 2-groupoid of étale metaplectic covers, including the torus case and the reductive-group-scheme statement in <a href="https://doi.org/10.4171/JEMS/1596">Theorem A</a>. Retain the chosen Borel or torus, base-scheme and coefficient data required by the formulation, and the proved comparison with Brylinski–Deligne covers.</p></li>
-<li><p><strong>L-groups and the proved parameterization theorems.</strong> Formalize the correctness and stated choice-compatibility of Weissman’s L-group construction for covers of quasisplit reductive groups, together with its proved parameterizations for split covering tori and unramified genuine representations. The root-datum axioms and gerbe constructions support these results; preserve the hypotheses of <a href="https://doi.org/10.24033/ast.1046">Weissman’s theorems</a>.</p></li>
-<li><p><strong>Principal-block Hecke correspondence and parameterization.</strong> Formalize the genuine Iwahori–Hecke algebra comparison theorems and the resulting correspondence for Iwahori-spherical representations in the cases treated by <a href="https://doi.org/10.1515/crll.2004.001">Savin</a> and the supplementary sources. Make the source’s group, cover, field and splitting restrictions explicit, and identify exactly which Langlands-parameter statements follow in those cases. The spherical Satake parameterization is a related result for the smaller spherical subcategory.</p></li>
-<li><p><strong>Inner forms and Weissman’s obstruction.</strong> Formalize the <a href="https://arxiv.org/abs/2506.08696">Shi–Zhao obstruction theorem</a> as the extended pure inner form varies, and the proved nonemptiness and finiteness result for covering-torus packets when the obstruction vanishes. Keep the general obstruction result distinct from the covering-torus correspondence theorem and retain the preprint’s hypotheses.</p></li>
-</ol>
-<h3 id="bd-supporting-material">Supporting material</h3>
-<p>Central extensions, K2 and étale cohomology, root data, the local and adelic realizations, genuine representations, and Hecke algebras are supporting material for these theorem targets. An Iwahori subgroup and any required splitting are defined or taken as given data according to the source. Their definitions, fixed-vector calculations and auxiliary lemmas are organized under the theorem whose proof needs them.</p>
-<p>Gan–Gao and McNamara remain supplementary formalization sources. Their exposition and calculations can support the theorem targets without becoming independent foundational tasks.</p>
-<h3 id="bd-references">Core sources</h3>
+<p>Learn and formalize the foundational theory of covers of general reductive groups: the Brylinski–Deligne classification of central K2-extensions, Weissman’s L-groups, and Yifei Zhao’s enlarged framework of étale metaplectic covers. The goal is to formalize the main classification and correspondence theorems and their proofs.</p>
+<p>The principal-block part concerns the established Iwahori-spherical correspondence and its Hecke-algebra description, within the group, cover and field hypotheses of the sources. Definitions and given objects are introduced as needed in those proofs.</p>
+<h3>Core references</h3>
 <ul>
 <li>Brylinski–Deligne, <em>Central extensions of reductive groups by K2</em>, Publ. Math. IHES 94 (2001), 5–85. <a href="https://doi.org/10.1007/s10240-001-8192-2">DOI</a>.</li>
 <li>Weissman, <em>L-groups and parameters for covering groups</em>, Astérisque 398 (2018), 33–186. <a href="https://doi.org/10.24033/ast.1046">DOI</a>.</li>
 <li>Yifei Zhao, <em>Étale metaplectic covers of reductive group schemes</em>, J. Eur. Math. Soc. (2025), published online first. <a href="https://doi.org/10.4171/JEMS/1596">DOI</a>; <a href="https://arxiv.org/abs/2204.00610">arXiv</a>.</li>
-<li>Luozi Shi and Yifei Zhao, <em>What are the extended pure inner forms of a cover?</em>, preprint (2025). <a href="https://arxiv.org/abs/2506.08696">arXiv</a>.</li>
 </ul>
-<h3 id="bd-supplementary-reading">Supplementary reading</h3>
+<h3>Further references</h3>
 <ul>
-<li>Gan–Gao, <em>The Langlands-Weissman Program for Brylinski-Deligne extensions</em>, Astérisque 398 (2018), 187–275. <a href="https://doi.org/10.24033/ast.1047">DOI</a>.</li>
+<li>Luozi Shi and Yifei Zhao, <em>What are the extended pure inner forms of a cover?</em>, preprint (2025). <a href="https://arxiv.org/abs/2506.08696">arXiv</a>.</li>
 <li>Gordan Savin, <em>On unramified representations of covering groups</em>, J. reine angew. Math. 566 (2004), 111–134. <a href="https://doi.org/10.1515/crll.2004.001">DOI</a>.</li>
 <li>McNamara, <em>Principal Series Representations of Metaplectic Groups Over Local Fields</em>, in <em>Multiple Dirichlet Series, L-functions and Automorphic Forms</em>, Progress in Mathematics 300 (2012), 299–327. <a href="https://doi.org/10.1007/978-0-8176-8334-4_13">DOI</a>.</li>
 </ul>
@@ -69,76 +56,35 @@
 <details class="task" id="kp">
 <summary><h2>Task 2: Kazhdan–Patterson — Representations, automorphic forms and metaplectic correspondence for GL(r)</h2></summary>
 <div class="task-body">
-<p>Study the local representation theory and global automorphic theory of Kazhdan–Patterson covers of GL(r): covering tori, induction, exceptional representations, Whittaker models, Eisenstein series and metaplectic correspondence. Keep matrix size, covering degree and determinant twist as parameters; GL(2) is a worked example.</p>
-<p>Treat Kazhdan–Patterson covers as a named family of Brylinski–Deligne covers in the library.</p>
-<p>The foundational sources are <a href="https://doi.org/10.1007/BF02698770">Kazhdan and Patterson’s <em>Metaplectic forms</em></a> and their work towards a generalized Shimura correspondence, together with <a href="https://doi.org/10.1007/BF01390092">Flicker’s GL(2) theory</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan metaplectic correspondence</a>. The local programme also includes <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s correspondence results</a> and the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification</a>.</p>
-<h3 id="kp-main-theorem-targets">Main theorem targets</h3>
-<ol>
-<li><p><strong>Classification of genuine irreducible representations.</strong> Formalize the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification theorem</a>: genuine irreducibles of the specified Kazhdan–Patterson covers are described by the appropriate multisegment data and compatible central character. Include the uniqueness, exhaustion and multiplicity-one assertions of the classification, with supercuspidal representations as its input data.</p></li>
-<li><p><strong>Local metaplectic correspondence and its representation-theoretic consequences.</strong> Formalize the <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan character correspondence</a> for the stated essentially square-integrable representations, using <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s corrected and extended results</a> for Levi compatibility, parabolic induction and Jacquet modules. Include the proved reducibility criterion and the essentially square-integrable and tempered classification results in their precise ranges.</p></li>
-<li><p><strong>Exceptional representations and metaplectic automorphic forms.</strong> Formalize the main local exceptional-representation results and global Eisenstein-residue theorems in <a href="https://doi.org/10.1007/BF02698770">Kazhdan–Patterson</a>, using the <a href="https://doi.org/10.1007/BF02698809">published corrections</a>. Target the proved representation-theoretic and Fourier-coefficient assertions, retaining the field, covering-degree and normalization hypotheses.</p></li>
-<li><p><strong>Global metaplectic correspondence.</strong> Formalize the global correspondence results proved by <a href="https://doi.org/10.1007/BF01390092">Flicker</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan</a>, including the character and trace-formula identities used to establish them. Keep the stated automorphic-representation classes, central-character restrictions and multiplicity assertions attached to each theorem.</p></li>
-<li><p><strong>Whittaker-dimension theorem: conditional formula and proved cases.</strong> Formalize the implication proved in <a href="https://arxiv.org/abs/2209.05852v3">Zou, §4, Theorem 4.7</a>, retaining Conjecture 4.6 as an explicit hypothesis where it is used. Separately formalize the cases of that conjecture proved in §4.4, including the character and cuspidal cases specified there, and the resulting unconditional dimension statements.</p></li>
-</ol>
-<h3 id="kp-supporting-material">Supporting material</h3>
-<p>The library definition of Kazhdan–Patterson covers, covering tori, metaplectic tensor products, induction, Jacquet modules, intertwiners and character theory support these theorems. Definitions and technical lemmas are introduced as required by their proofs. Archimedean or wild-place statements are included only when they occur in the cited theorem’s proved scope.</p>
-<h3 id="kp-references">References</h3>
+<p>Learn and formalize the local and global theory of Kazhdan–Patterson covers of GL(r), with irreducible-representation classification and metaplectic correspondence as the main goals. The foundational works are Kazhdan–Patterson on metaplectic forms, Kaplan–Lapid–Zou on classification, and Flicker and Flicker–Kazhdan on correspondence.</p>
+<p>Kazhdan–Patterson covers are treated directly as a named family of Brylinski–Deligne covers in the library. The formalization follows the main theorems and proofs of the core papers, retaining their central-character, field and covering-degree hypotheses.</p>
+<h3>Core references</h3>
 <ul>
 <li>Kazhdan-Patterson, <em>Metaplectic forms</em>, IHES 59 (1984), 35-142. <a href="https://doi.org/10.1007/BF02698770">DOI</a>.</li>
 <li>Kazhdan-Patterson, <em>Corrections to Metaplectic forms</em>, IHES 62 (1985), 203. <a href="https://doi.org/10.1007/BF02698809">DOI</a>.</li>
+<li>Kaplan-Lapid-Zou, <em>Classification of irreducible representations of metaplectic covers of the general linear group over a non-archimedean local field</em>, Representation Theory 27 (2023), 1041-1087. <a href="https://doi.org/10.1090/ert/659">DOI</a>.</li>
 <li>Flicker, <em>Automorphic forms on covering groups of GL(2)</em>, Invent. Math. 57 (1980), 119-182. <a href="https://doi.org/10.1007/BF01390092">DOI</a>.</li>
 <li>Kazhdan-Patterson, <em>Towards a generalized Shimura correspondence</em>, Adv. Math. 60 (1986), 161-234. <a href="https://doi.org/10.1016/S0001-8708(86)80010-X">DOI</a>.</li>
 <li>Flicker-Kazhdan, <em>Metaplectic correspondence</em>, IHES 64 (1986), 53-110. <a href="https://doi.org/10.1007/BF02699192">DOI</a>.</li>
+</ul>
+<h3>Further references</h3>
+<ul>
 <li>Zou, <em>Local metaplectic correspondence and applications</em>, Math. Z. 305 (2023), article 43. <a href="https://doi.org/10.1007/s00209-023-03368-6">DOI</a>.</li>
-<li>Kaplan-Lapid-Zou, <em>Classification of irreducible representations of metaplectic covers of the general linear group over a non-archimedean local field</em>, Representation Theory 27 (2023), 1041-1087. <a href="https://doi.org/10.1090/ert/659">DOI</a>.</li>
 </ul>
 <p><a href="kp.html">Open as a separate page →</a></p>
 </div>
 </details>
-<details class="task" id="bump-ginzburg">
-<summary><h2>Task 3: Bump–Ginzburg — Small representations, zeta integrals and automorphic liftings</h2></summary>
-<div class="task-body">
-<p>Study the covering-group integral and lifting constructions of Bump–Ginzburg and their collaborators: theta and small representations, Fourier coefficients, local and global zeta integrals, symmetric-power L-functions, orthogonal-cover liftings and cubic Shimura periods.</p>
-<p>The principal works are the <a href="https://doi.org/10.2307/2946548">Bump–Ginzburg symmetric-square construction</a>, the <a href="https://doi.org/10.1007/s002220050082">Bump–Ginzburg–Hoffstein symmetric-cube construction</a>, and the work of <a href="https://doi.org/10.1215/S0012-7094-06-13126-5">Bump–Friedberg–Ginzburg</a> on cubic Shimura lifting, small representations and liftings between orthogonal covers.</p>
-<h3 id="bump-ginzburg-main-theorem-targets">Main theorem targets</h3>
-<ol>
-<li><p><strong>Symmetric-square integral representation.</strong> Formalize the main <a href="https://doi.org/10.2307/2946548">Bump–Ginzburg symmetric-square integral theorem</a>: the stated global integral identity, its unramified local-factor calculation and the analytic consequences established in that paper, with its normalization and representation hypotheses.</p></li>
-<li><p><strong>Symmetric-cube integral representation.</strong> Formalize the covering-group integral and its relation to the symmetric-cube L-function in <a href="https://doi.org/10.1007/s002220050082">Bump–Ginzburg–Hoffstein</a>, together with the analytic assertions actually proved there. Retain the original field and automorphic-form hypotheses and distinguish those conclusions from later stronger results.</p></li>
-<li><p><strong>Small representations of odd orthogonal covers.</strong> Formalize the main <a href="https://doi.org/10.1155/S1073792803210217">Bump–Friedberg–Ginzburg smallness theorems</a> for the local and global representations of the specified odd-orthogonal double covers. The outcome is the stated nilpotent-orbit support, including the required vanishing and nonvanishing results; smallness does not identify every member of the family as a minimal representation.</p></li>
-<li><p><strong>Automorphic lifting between orthogonal double covers.</strong> Formalize the lifting theorems in <a href="https://doi.org/10.1215/S0012-7094-06-13126-5">Bump–Friedberg–Ginzburg</a>, from the specified genuine automorphic representations on even orthogonal double covers to the odd orthogonal double covers in that work. Preserve the source, image and hypotheses of each proved nonvanishing, cuspidality or Fourier-coefficient assertion.</p></li>
-<li><p><strong>Proved period results for cubic Shimura lifting.</strong> Formalize the finite-field and Eisenstein-series results supporting the period criterion in <a href="https://doi.org/10.1007/BF02784158">Bump–Friedberg–Ginzburg</a>. The general characterization of the cubic Shimura image by period nonvanishing remains a conjecture in that paper and is recorded as context.</p></li>
-</ol>
-<h3 id="bump-ginzburg-supporting-material">Supporting material</h3>
-<p>Theta representations, Eisenstein residues, Fourier coefficients, local models, measures and unfolding lemmas support these integral and lifting theorems. Each definition or calculation is tied to the theorem that uses it, including the exact uniqueness or nonunique-model argument required for Euler factorization.</p>
-<h3 id="bump-ginzburg-references">References</h3>
-<ul>
-<li>Bump-Ginzburg, <em>Symmetric square L-functions on GL(r)</em>, Ann. Math. 136 (1992), 137-205. <a href="https://doi.org/10.2307/2946548">DOI</a>.</li>
-<li>Bump-Ginzburg-Hoffstein, <em>The symmetric cube</em>, Invent. Math. 125 (1996), 413-449. <a href="https://doi.org/10.1007/s002220050082">DOI</a>.</li>
-<li>Bump-Friedberg-Ginzburg, <em>On the cubic Shimura lift for PGL(3)</em>, Israel J. Math. 126 (2001), 289-307. <a href="https://doi.org/10.1007/BF02784158">DOI</a>.</li>
-<li>Bump-Friedberg-Ginzburg, <em>Small representations for odd orthogonal groups</em>, IMRN 2003(25), 1363-1393. <a href="https://doi.org/10.1155/S1073792803210217">DOI</a>.</li>
-<li>Bump-Friedberg-Ginzburg, <em>Lifting automorphic representations on the double covers of orthogonal groups</em>, Duke Math. J. 131 (2006), 363-396. <a href="https://doi.org/10.1215/S0012-7094-06-13126-5">DOI</a>.</li>
-</ul>
-<p><a href="bump-ginzburg.html">Open as a separate page →</a></p>
-</div>
-</details>
 <details class="task" id="real-shimura">
-<summary><h2>Task 4: Adams–Vogan–Trapa — Character lifting and unitary Shimura correspondences for real covering groups</h2></summary>
+<summary><h2>Task 3: Adams, Barbasch, Paul, Trapa and Vogan — Unitary Shimura correspondences for real covering groups</h2></summary>
 <div class="task-body">
-<p>Study the work of Adams, Vogan, Trapa and their collaborators on Shimura correspondences, character lifting and unitarity for real covering groups, including nonsplit real forms and complex groups viewed as real Lie groups. The task covers both the foundational results and the later small-representation and lifting problems described below.</p>
-<p>The main sources are <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">Adams–Barbasch–Paul–Trapa–Vogan</a> for unitary Shimura correspondence over split real groups; <a href="https://doi.org/10.1090/S1088-4165-10-00361-4">Adams–Herb</a> for character lifting; <a href="https://doi.org/10.1112/S0010437X11007354">Adams–Trapa</a> for nonlinear multiplicity duality; and <a href="https://doi.org/10.24033/ast.1119">Adams–van Leeuwen–Trapa–Vogan</a> for unitarity algorithms. The later lifting questions include work of Tsai and the Tsai–Wong–Zhang preprint listed in the references.</p>
-<h3 id="real-shimura-main-theorem-targets">Main theorem targets</h3>
-<ol>
-<li><p><strong>The proved unitary Shimura correspondence results.</strong> Formalize the <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">Adams–Barbasch–Paul–Trapa–Vogan theorems</a>: the injection from pseudospherical complementary series of the stated classical covers into the spherical complementary series of their associated linear groups, and the unitarity equivalence under Howe correspondence for the metaplectic symplectic representations containing the det^(1/2) K-type. The broader bijection is a separately stated conjecture in that work.</p></li>
-<li><p><strong>Character-lifting theorem.</strong> Formalize the <a href="https://doi.org/10.1090/S1088-4165-10-00361-4">Adams–Herb theorem</a> for admissible simply laced covering data: the lift of a stable virtual character is a genuine virtual character, possibly zero. Include the explicit stable-standard-module computation and the proved induction and infinitesimal-character formulas, under the source’s hypotheses.</p></li>
-<li><p><strong>Nonlinear character-multiplicity duality.</strong> Formalize the <a href="https://doi.org/10.1112/S0010437X11007354">Adams–Trapa block-duality theorem</a> for genuine blocks of admissible two-fold covers at regular infinitesimal character, and its relation between standard and irreducible character multiplicities. Preserve the simply laced and real-form restrictions of the theorem.</p></li>
-<li><p><strong>Signature and unitarity algorithm in its established setting.</strong> Formalize the signature formulas and correctness of the unitarity algorithm of <a href="https://doi.org/10.24033/ast.1119">Adams–van Leeuwen–Trapa–Vogan</a> for linear real reductive groups. State that linear setting explicitly; application to a nonlinear cover requires a separately established theorem for that category.</p></li>
-</ol>
-<h3 id="real-shimura-supporting-material">Supporting material</h3>
-<p>The source definitions of real covers, Harish-Chandra modules, given K-types, standard modules, invariant Hermitian forms, transfer factors and Jantzen filtrations support these theorem targets. The auxiliary calculations are formalized within the proofs they serve.</p>
-<p>The source-specific lifting theorems in Tsai’s work and the Tsai–Wong–Zhang preprint remain further reading, with their precise group hypotheses and preprint status. They do not replace the main published theorem targets above.</p>
-<h3 id="real-shimura-references">References</h3>
+<p>Learn and formalize the unitary Shimura correspondence for split real groups developed by Adams, Barbasch, Paul, Trapa and Vogan, through harmonic-analytic methods and the comparison of representations of covering and linear groups. The main goal is to formalize the correspondence theorems proved in that work and their proofs.</p>
+<p>The proved results include the complementary-series injection for the stated classical groups and the unitarity equivalence under Howe correspondence for the metaplectic symplectic representations containing the det^(1/2) K-type. Preserve these hypotheses and distinguish the broader correspondence conjecture. Character lifting, block duality, unitarity algorithms and later lifting results are provided below as further references.</p>
+<h3>Main reference</h3>
 <ul>
 <li>Adams-Barbasch-Paul-Trapa-Vogan, <em>Unitary Shimura correspondences for split real groups</em>, JAMS 20 (2007), 701-751. <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">DOI</a>.</li>
+</ul>
+<h3>Further references</h3>
+<ul>
 <li>Adams-Herb, <em>Lifting of characters for nonlinear simply laced groups</em>, Representation Theory 14 (2010), 70-147. <a href="https://doi.org/10.1090/S1088-4165-10-00361-4">DOI</a>.</li>
 <li>Adams-Trapa, <em>Duality for nonlinear simply laced groups</em>, Compositio Math. 148 (2012), 931-965. <a href="https://doi.org/10.1112/S0010437X11007354">DOI</a>.</li>
 <li>Adams-van Leeuwen-Trapa-Vogan, <em>Unitary representations of real reductive groups</em>, Asterisque 417 (2020). <a href="https://doi.org/10.24033/ast.1119">DOI</a>.</li>

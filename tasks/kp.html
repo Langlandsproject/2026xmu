@@ -14,32 +14,23 @@
   <nav aria-label="Learning navigation"><a href="../">Conference</a><a href="./">All tasks</a></nav>
 </div></header>
 <main class="wrap" id="main">
-<h1 id="metaplectic-representation-theory-of-glr">Task 2: Kazhdan–Patterson — Representations, automorphic forms and metaplectic correspondence for GL(r)</h1>
-<p>Study the local representation theory and global automorphic theory of Kazhdan–Patterson covers of GL(r): covering tori, induction, exceptional representations, Whittaker models, Eisenstein series and metaplectic correspondence. Keep matrix size, covering degree and determinant twist as parameters; GL(2) is a worked example.</p>
-<p>Treat Kazhdan–Patterson covers as a named family of Brylinski–Deligne covers in the library.</p>
-<p>The foundational sources are <a href="https://doi.org/10.1007/BF02698770">Kazhdan and Patterson’s <em>Metaplectic forms</em></a> and their work towards a generalized Shimura correspondence, together with <a href="https://doi.org/10.1007/BF01390092">Flicker’s GL(2) theory</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan metaplectic correspondence</a>. The local programme also includes <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s correspondence results</a> and the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification</a>.</p>
-<h2 id="main-theorem-targets">Main theorem targets</h2>
-<ol>
-<li><p><strong>Classification of genuine irreducible representations.</strong> Formalize the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification theorem</a>: genuine irreducibles of the specified Kazhdan–Patterson covers are described by the appropriate multisegment data and compatible central character. Include the uniqueness, exhaustion and multiplicity-one assertions of the classification, with supercuspidal representations as its input data.</p></li>
-<li><p><strong>Local metaplectic correspondence and its representation-theoretic consequences.</strong> Formalize the <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan character correspondence</a> for the stated essentially square-integrable representations, using <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s corrected and extended results</a> for Levi compatibility, parabolic induction and Jacquet modules. Include the proved reducibility criterion and the essentially square-integrable and tempered classification results in their precise ranges.</p></li>
-<li><p><strong>Exceptional representations and metaplectic automorphic forms.</strong> Formalize the main local exceptional-representation results and global Eisenstein-residue theorems in <a href="https://doi.org/10.1007/BF02698770">Kazhdan–Patterson</a>, using the <a href="https://doi.org/10.1007/BF02698809">published corrections</a>. Target the proved representation-theoretic and Fourier-coefficient assertions, retaining the field, covering-degree and normalization hypotheses.</p></li>
-<li><p><strong>Global metaplectic correspondence.</strong> Formalize the global correspondence results proved by <a href="https://doi.org/10.1007/BF01390092">Flicker</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan</a>, including the character and trace-formula identities used to establish them. Keep the stated automorphic-representation classes, central-character restrictions and multiplicity assertions attached to each theorem.</p></li>
-<li><p><strong>Whittaker-dimension theorem: conditional formula and proved cases.</strong> Formalize the implication proved in <a href="https://arxiv.org/abs/2209.05852v3">Zou, §4, Theorem 4.7</a>, retaining Conjecture 4.6 as an explicit hypothesis where it is used. Separately formalize the cases of that conjecture proved in §4.4, including the character and cuspidal cases specified there, and the resulting unconditional dimension statements.</p></li>
-</ol>
-<h2 id="supporting-material">Supporting material</h2>
-<p>The library definition of Kazhdan–Patterson covers, covering tori, metaplectic tensor products, induction, Jacquet modules, intertwiners and character theory support these theorems. Definitions and technical lemmas are introduced as required by their proofs. Archimedean or wild-place statements are included only when they occur in the cited theorem’s proved scope.</p>
-<h2 id="references">References</h2>
+<h1>Task 2: Kazhdan–Patterson — Representations, automorphic forms and metaplectic correspondence for GL(r)</h1>
+<p>Learn and formalize the local and global theory of Kazhdan–Patterson covers of GL(r), with irreducible-representation classification and metaplectic correspondence as the main goals. The foundational works are Kazhdan–Patterson on metaplectic forms, Kaplan–Lapid–Zou on classification, and Flicker and Flicker–Kazhdan on correspondence.</p>
+<p>Kazhdan–Patterson covers are treated directly as a named family of Brylinski–Deligne covers in the library. The formalization follows the main theorems and proofs of the core papers, retaining their central-character, field and covering-degree hypotheses.</p>
+<h2>Core references</h2>
 <ul>
 <li>Kazhdan-Patterson, <em>Metaplectic forms</em>, IHES 59 (1984), 35-142. <a href="https://doi.org/10.1007/BF02698770">DOI</a>.</li>
 <li>Kazhdan-Patterson, <em>Corrections to Metaplectic forms</em>, IHES 62 (1985), 203. <a href="https://doi.org/10.1007/BF02698809">DOI</a>.</li>
+<li>Kaplan-Lapid-Zou, <em>Classification of irreducible representations of metaplectic covers of the general linear group over a non-archimedean local field</em>, Representation Theory 27 (2023), 1041-1087. <a href="https://doi.org/10.1090/ert/659">DOI</a>.</li>
 <li>Flicker, <em>Automorphic forms on covering groups of GL(2)</em>, Invent. Math. 57 (1980), 119-182. <a href="https://doi.org/10.1007/BF01390092">DOI</a>.</li>
 <li>Kazhdan-Patterson, <em>Towards a generalized Shimura correspondence</em>, Adv. Math. 60 (1986), 161-234. <a href="https://doi.org/10.1016/S0001-8708(86)80010-X">DOI</a>.</li>
 <li>Flicker-Kazhdan, <em>Metaplectic correspondence</em>, IHES 64 (1986), 53-110. <a href="https://doi.org/10.1007/BF02699192">DOI</a>.</li>
-<li>Zou, <em>Local metaplectic correspondence and applications</em>, Math. Z. 305 (2023), article 43. <a href="https://doi.org/10.1007/s00209-023-03368-6">DOI</a>.</li>
-<li>Kaplan-Lapid-Zou, <em>Classification of irreducible representations of metaplectic covers of the general linear group over a non-archimedean local field</em>, Representation Theory 27 (2023), 1041-1087. <a href="https://doi.org/10.1090/ert/659">DOI</a>.</li>
 </ul>
-
-<nav class="task-nav" aria-label="Related pages"><a href="./">All four tasks</a><a href="./#knowledge-base">Knowledge-base requirements</a></nav>
+<h2>Further references</h2>
+<ul>
+<li>Zou, <em>Local metaplectic correspondence and applications</em>, Math. Z. 305 (2023), article 43. <a href="https://doi.org/10.1007/s00209-023-03368-6">DOI</a>.</li>
+</ul>
+<nav class="task-nav" aria-label="Related pages"><a href="./">All tasks</a><a href="./#knowledge-base">Knowledge-base requirements</a></nav>
 </main>
 <footer><div class="wrap">Langlands Program for Covering Groups · Xiamen University · 7–11 December 2026</div></footer>
 </body>
