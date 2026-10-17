@@ -34,7 +34,7 @@
 <p>Tasks 1–4 below are learning and formalization goals, listed in decreasing order of priority.</p>
 <div class="tasks">
 <details class="task" id="bd">
-<summary><h2>Task 1: BD–Weissman — Covering theory for general reductive groups and LLC for the principal block</h2></summary>
+<summary><h2>Task 1: Brylinski–Deligne and Weissman — Covers of general reductive groups and the principal-block local Langlands correspondence</h2></summary>
 <div class="task-body">
 <p>Develop the theory of covering groups for general reductive groups, starting from Brylinski–Deligne central extensions and Weissman’s L-groups, and study the local Langlands correspondence (LLC) for the genuine principal block. Include local and adelic realizations and Iwahori/Hecke theory, with the field, splitting and ramification hypotheses stated explicitly.</p>
 <p>The main sources are <a href="https://doi.org/10.1007/s10240-001-8192-2">Brylinski and Deligne</a> for central extensions by K2; <a href="https://doi.org/10.24033/ast.1046">Weissman</a> for L-groups and parameters; <a href="https://doi.org/10.24033/ast.1047">Gan and Gao</a> for the Langlands–Weissman programme; and <a href="https://doi.org/10.1007/978-0-8176-8334-4_13">McNamara</a> for metaplectic principal series and Satake theory.</p>
@@ -48,8 +48,8 @@
 <li><p><strong>Hecke theory, Satake and LLC for the principal block.</strong> Define genuine Iwahori Hecke algebras and prove their presentations and actions on fixed vectors. Develop the local Langlands correspondence for the genuine Iwahori-spherical principal block through its Hecke-algebra parameters. Construct spherical Hecke algebras and the Satake comparison with the modified dual group. Work out tori, GL(r), PGL(r), symplectic and nonsplit examples within the proved ranges, recording tame and ramification restrictions and separating established results from conjectural cases.</p></li>
 </ol>
 <h3 id="bd-additional-task-comparison-with-kazhdan-patterson-covers">Additional task: comparison with Kazhdan-Patterson covers</h3>
-<p>Identify the BD invariant triples giving KP covers of GL(r), with matrix size, covering degree and determinant twist as parameters. Prove local and adelic isomorphisms, including cocycle coboundaries, central embeddings, root lifts and compact/rational splittings. Transport induction, intertwiners and fixed-vector spaces with proved normalization factors.</p>
-<p>This comparison is accepted separately from the KP main program. Cubic GL(2) is a worked specialization of the general comparison.</p>
+<p>Identify the Brylinski–Deligne invariant triples giving Kazhdan–Patterson covers of GL(r), with matrix size, covering degree and determinant twist as parameters. Prove local and adelic isomorphisms, including cocycle coboundaries, central embeddings, root lifts and compact/rational splittings. Transport induction, intertwiners and fixed-vector spaces with proved normalization factors.</p>
+<p>This comparison is accepted separately from the Kazhdan–Patterson main program. Cubic GL(2) is a worked specialization of the general comparison.</p>
 <p>Each checkpoint contributes precise theorems, readable proofs, worked examples and checked Lean declarations using the common library definitions.</p>
 <h3 id="bd-references">References</h3>
 <ul>
@@ -63,13 +63,13 @@
 </div>
 </details>
 <details class="task" id="kp">
-<summary><h2>Task 2: KP — Local and global metaplectic representation theory of GL(r)</h2></summary>
+<summary><h2>Task 2: Kazhdan–Patterson — Representations, automorphic forms and metaplectic correspondence for GL(r)</h2></summary>
 <div class="task-body">
-<p>Study the local representation theory and global automorphic theory of Kazhdan–Patterson (KP) covers of GL(r): covering tori, induction, exceptional representations, Whittaker models, Eisenstein series and metaplectic correspondence. Keep matrix size, covering degree and determinant twist as parameters; GL(2) is a worked example.</p>
+<p>Study the local representation theory and global automorphic theory of Kazhdan–Patterson covers of GL(r): covering tori, induction, exceptional representations, Whittaker models, Eisenstein series and metaplectic correspondence. Keep matrix size, covering degree and determinant twist as parameters; GL(2) is a worked example.</p>
 <p>The foundational sources are <a href="https://doi.org/10.1007/BF02698770">Kazhdan and Patterson’s <em>Metaplectic forms</em></a> and their work towards a generalized Shimura correspondence, together with <a href="https://doi.org/10.1007/BF01390092">Flicker’s GL(2) theory</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan metaplectic correspondence</a>. The local programme also includes <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s correspondence results</a> and the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification</a>.</p>
 <h3 id="kp-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
-<li><p><strong>Concrete covers and covering tori.</strong> Construct KP cocycles, centers, splittings and torus representations in general rank. Determine genuine central characters and the restrictions to Borel and Levi subgroups.</p></li>
+<li><p><strong>Concrete covers and covering tori.</strong> Construct Kazhdan–Patterson cocycles, centers, splittings and torus representations in general rank. Determine genuine central characters and the restrictions to Borel and Levi subgroups.</p></li>
 <li><p><strong>Induction and Jacquet modules.</strong> Construct metaplectic tensor products on Levi subgroups, normalized parabolic induction and Jacquet functors. Prove reciprocity, induction compatibility and the required geometric-lemma statements.</p></li>
 <li><p><strong>Spherical and Iwahori theory.</strong> Specialize the common Hecke algebras to GL(r). Compute fixed vectors, Hecke actions and unramified parameters; prove the corresponding module and parameter identifications with splitting and tameness hypotheses.</p></li>
 <li><p><strong>Intertwiners, exceptional representations and Whittaker spaces.</strong> Prove convergence, continuation, normalization and Weyl relations for intertwiners. Construct exceptional representations and determine the required Whittaker dimensions, including nonunique models.</p></li>
@@ -78,8 +78,8 @@
 <li><p><strong>Global automorphic theory.</strong> Construct adelic representations and Eisenstein series; prove constant-term formulas, continuation, functional equations and Maass-Selberg relations. Construct residues, determine Fourier coefficients with corrected normalizations, and derive the arithmetic applications over number and function fields in scope.</p></li>
 <li><p><strong>Global correspondence.</strong> Develop orbital-integral matching, transfer and trace-formula comparisons in general rank. Prove lifting and multiplicity results with their representation restrictions and any unproved matching hypotheses explicit.</p></li>
 </ol>
-<h3 id="kp-additional-task-comparison-with-bd-realizations">Additional task: comparison with BD realizations</h3>
-<p>Jointly prove the isomorphisms between concrete KP covers and BD realizations and transport the representation constructions through them. Accept this comparison separately; the main theory proceeds with the concrete covers.</p>
+<h3 id="kp-additional-task-comparison-with-bd-realizations">Additional task: comparison with Brylinski–Deligne realizations</h3>
+<p>Jointly prove the isomorphisms between concrete Kazhdan–Patterson covers and Brylinski–Deligne realizations and transport the representation constructions through them. Accept this comparison separately; the main theory proceeds with the concrete covers.</p>
 <p>Checkpoints include readable proofs, examples and checked Lean declarations.</p>
 <h3 id="kp-references">References</h3>
 <ul>
@@ -95,9 +95,9 @@
 </div>
 </details>
 <details class="task" id="bump-ginzburg">
-<summary><h2>Task 3: BG — Small representations, integral representations of L-functions and liftings</h2></summary>
+<summary><h2>Task 3: Bump–Ginzburg — Small representations, zeta integrals and automorphic liftings</h2></summary>
 <div class="task-body">
-<p>Study the covering-group integral and lifting constructions of Bump–Ginzburg (BG) and their collaborators: theta and small representations, Fourier coefficients, local and global zeta integrals, symmetric-power L-functions, orthogonal-cover liftings and cubic Shimura periods.</p>
+<p>Study the covering-group integral and lifting constructions of Bump–Ginzburg and their collaborators: theta and small representations, Fourier coefficients, local and global zeta integrals, symmetric-power L-functions, orthogonal-cover liftings and cubic Shimura periods.</p>
 <p>The principal works are the <a href="https://doi.org/10.2307/2946548">Bump–Ginzburg symmetric-square construction</a>, the <a href="https://doi.org/10.1007/s002220050082">Bump–Ginzburg–Hoffstein symmetric-cube construction</a>, and the work of <a href="https://doi.org/10.1215/S0012-7094-06-13126-5">Bump–Friedberg–Ginzburg</a> on cubic Shimura lifting, small representations and liftings between orthogonal covers.</p>
 <h3 id="bump-ginzburg-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
@@ -122,9 +122,9 @@
 </div>
 </details>
 <details class="task" id="real-shimura">
-<summary><h2>Task 4: AVT — Real covering groups, character lifting and unitary Shimura correspondence</h2></summary>
+<summary><h2>Task 4: Adams–Vogan–Trapa — Character lifting and unitary Shimura correspondences for real covering groups</h2></summary>
 <div class="task-body">
-<p>Study the work of Adams, Vogan, Trapa (AVT) and their collaborators on Shimura correspondences, character lifting and unitarity for real covering groups, including nonsplit real forms and complex groups viewed as real Lie groups. The task covers both the foundational results and the later small-representation and lifting problems described below.</p>
+<p>Study the work of Adams, Vogan, Trapa and their collaborators on Shimura correspondences, character lifting and unitarity for real covering groups, including nonsplit real forms and complex groups viewed as real Lie groups. The task covers both the foundational results and the later small-representation and lifting problems described below.</p>
 <p>The main sources are <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">Adams–Barbasch–Paul–Trapa–Vogan</a> for unitary Shimura correspondence over split real groups; <a href="https://doi.org/10.1090/S1088-4165-10-00361-4">Adams–Herb</a> for character lifting; <a href="https://doi.org/10.1112/S0010437X11007354">Adams–Trapa</a> for nonlinear multiplicity duality; and <a href="https://doi.org/10.24033/ast.1119">Adams–van Leeuwen–Trapa–Vogan</a> for unitarity algorithms. The later lifting questions include work of Tsai and the Tsai–Wong–Zhang preprint listed in the references.</p>
 <h3 id="real-shimura-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
