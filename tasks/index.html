@@ -15,14 +15,11 @@
 </div></header>
 <main class="wrap" id="main">
 <h1>Mathematical Knowledge Base Development and Formalization</h1>
-<p class="lead">Build a mathematical knowledge base for covering groups: precise definitions, main theorems and proofs, worked examples and references, with AI-assisted exposition and Lean formalization.</p>
+<p class="lead">Develop a knowledge base for covering groups, with AI-assisted mathematical exposition and Lean-checked proofs.</p>
 <section id="knowledge-base" aria-labelledby="knowledge-base-title">
-<h2 id="knowledge-base-title">Building a Lean-certified knowledge base</h2>
-<h3 id="knowledge-base-vision">Vision</h3>
-<p>Build a mathematically accurate, general and extensible knowledge base, supported by Lean-checked proofs. It should help people understand the subject, use its results in their own work, and develop the theory further.</p>
-<h3 id="knowledge-base-requirements">Requirements</h3>
+<h2 id="knowledge-base-title">Knowledge-base requirements</h2>
 <ol>
-<li><p><strong>Main theorems and their proofs.</strong> Organize each task around the main theorems of the source theory, with each theorem’s reference, hypotheses, conclusion and proof explicit. Definitions, given data, constructions and auxiliary lemmas support these targets. Encode definitions directly and take the objects chosen or assumed in a theorem as input data. Formalize the source’s actual constructions and their well-definedness proofs where needed. A completed target includes the main theorem’s checked Lean proof, a readable mathematical proof, and reviewed agreement between the written and formal statements. Link the exact Lean declaration and record the checked revision, dependencies and axioms. Label conditional theorems and retain their assumptions; record conjectures separately as context.</p></li>
+<li><p><strong>Main theorems and their proofs.</strong> State the main theorems with explicit hypotheses, conclusions and source references. Provide a readable mathematical proof and a checked Lean proof of each theorem, and verify that the written and formal statements agree. Encode definitions directly, take chosen objects as input data, and prove the well-definedness and properties of constructions where required. Link the Lean declarations and record the checked revision, dependencies and axioms. Retain the assumptions of conditional results and distinguish them from conjectures.</p></li>
 <li><p><strong>Generality.</strong> State definitions and results in the greatest generality supported by the arguments. Keep parameters explicit, identify where each assumption enters the proof, and derive important special cases from the general results.</p></li>
 <li><p><strong>Consistent notation and conventions.</strong> Use a consistent set of notation and conventions throughout the exposition and Lean code. Explain how alternative formulations relate, including the equivalences or comparison maps needed to move between them.</p></li>
 <li><p><strong>Reusable Lean interfaces and extensible type design.</strong> Build one coherent library on mathlib's types, structures and theorems, following its notation and API conventions. Choose general data structures and reusable interfaces that keep routine constructions and theorem applications simple. Use structures, typeclasses and explicit parameters according to their roles, keeping instance inference predictable and coercions coherent. Make multiple inheritance paths to the same structure agree definitionally to avoid conflicting instance diamonds. Check the design on representative examples and extensions.</p></li>
@@ -31,13 +28,13 @@
 <li><p><strong>Attribution, historical context and references.</strong> For important theorems, name the people who proved them and explain their place in the development of the subject, including later generalizations and corrections. Give full references with authors, titles, publication details, page or theorem locations, editions and DOI links. Identify contributors to the exposition and Lean formalization as well.</p></li>
 </ol>
 </section>
-<p>Tasks 1–3 contribute to this knowledge base and its formalization, in decreasing order of priority.</p>
+<p>Tasks are listed in decreasing order of priority.</p>
 <div class="tasks">
 <details class="task" id="bd">
 <summary><h2>Task 1: Brylinski–Deligne, Weissman and Yifei Zhao — Covers of general reductive groups and the principal-block local Langlands correspondence</h2></summary>
 <div class="task-body">
-<p>Learn and formalize the foundational theory of covers of general reductive groups: Brylinski–Deligne’s classification of central K2-extensions, Weissman’s L-groups, and Yifei Zhao’s construction and classification of étale metaplectic covers and their dual data. The goal is to formalize the main theorems of these works and their proofs.</p>
-<p>The principal-block part concerns the established Iwahori-spherical correspondence and its Hecke-algebra description, within the group, cover and field hypotheses of the sources. Definitions and given objects are introduced as needed in those proofs.</p>
+<p>Formalize Brylinski–Deligne’s classification of central K2-extensions, Weissman’s L-groups, and Yifei Zhao’s construction and classification of étale metaplectic covers and their dual data.</p>
+<p>The principal-block part concerns the established Iwahori-spherical correspondence and its Hecke-algebra description.</p>
 <h3>Core references</h3>
 <ul>
 <li>Brylinski–Deligne, <em>Central extensions of reductive groups by K2</em>, Publ. Math. IHES 94 (2001), 5–85. <a href="https://doi.org/10.1007/s10240-001-8192-2">DOI</a>.</li>
@@ -56,8 +53,7 @@
 <details class="task" id="kp">
 <summary><h2>Task 2: Kazhdan–Patterson — Representations, automorphic forms and metaplectic correspondence for GL(r)</h2></summary>
 <div class="task-body">
-<p>Learn and formalize the local and global theory of Kazhdan–Patterson covers of GL(r), with irreducible-representation classification and metaplectic correspondence as the main goals. The foundational works are Kazhdan–Patterson on metaplectic forms, Kaplan–Lapid–Zou on classification, and Flicker and Flicker–Kazhdan on correspondence. For the correspondence, follow the character identities and trace-formula comparisons in those works.</p>
-<p>Kazhdan–Patterson covers are treated directly as a named family of Brylinski–Deligne covers in the library. The formalization follows the main theorems and proofs of the core papers, retaining their central-character, field and covering-degree hypotheses.</p>
+<p>Formalize the local and global theory of Kazhdan–Patterson covers of GL(r): metaplectic forms, the classification of irreducible representations by Kaplan–Lapid–Zou, and the metaplectic correspondence of Flicker and Flicker–Kazhdan via character identities and trace-formula comparisons.</p>
 <h3>Core references</h3>
 <ul>
 <li>Kazhdan-Patterson, <em>Metaplectic forms</em>, IHES 59 (1984), 35-142. <a href="https://doi.org/10.1007/BF02698770">DOI</a>.</li>
@@ -73,8 +69,8 @@
 <details class="task" id="real-shimura">
 <summary><h2>Task 3: Adams, Barbasch, Paul, Trapa and Vogan — Unitary Shimura correspondences for real covering groups</h2></summary>
 <div class="task-body">
-<p>Learn and formalize the unitary Shimura correspondence for split real groups developed by Adams, Barbasch, Paul, Trapa and Vogan, through harmonic-analytic methods and the comparison of representations of covering and linear groups. The main goal is to formalize the correspondence theorems proved in that work and their proofs.</p>
-<p>The proved results include the complementary-series injection for the stated classical groups and the unitarity equivalence under Howe correspondence for the metaplectic symplectic representations containing the det^(1/2) K-type. Preserve these hypotheses and distinguish the broader correspondence conjecture. Character lifting, block duality, unitarity algorithms and later lifting results are provided below as further references.</p>
+<p>Formalize the unitary Shimura correspondence for split real groups developed by Adams, Barbasch, Paul, Trapa and Vogan through harmonic-analytic methods.</p>
+<p>The proved results include the complementary-series injection for the stated classical groups and the unitarity equivalence under Howe correspondence for the metaplectic symplectic representations containing the det^(1/2) K-type. The broader correspondence is stated as a conjecture in that work.</p>
 <h3>Main reference</h3>
 <ul>
 <li>Adams-Barbasch-Paul-Trapa-Vogan, <em>Unitary Shimura correspondences for split real groups</em>, JAMS 20 (2007), 701-751. <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">DOI</a>.</li>
