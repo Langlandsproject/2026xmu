@@ -21,9 +21,10 @@
 <p>Tasks 1–4 are listed in decreasing order of priority.</p>
 <div class="tasks">
 <details class="task" id="bd">
-<summary><h2>Task 1: Covering groups, BD invariants and L-groups</h2></summary>
+<summary><h2>Task 1: BD–Weissman</h2></summary>
 <div class="task-body">
-<p>This team develops the common covering-group theory in the unified Lean library and its Lean-certified knowledge base. The scope is connected reductive groups of every root type, including tori, non-simply-connected and nonsplit groups. It supplies extensions, realizations, dual groups and general Iwahori/Hecke theory used by the representation-theory teams.</p>
+<p>Study Brylinski–Deligne (BD) central extensions of reductive groups, their local and adelic realizations, Weissman’s L-groups, and genuine Iwahori/Hecke theory. The scope includes tori, non-simply-connected and nonsplit groups, with the hypotheses of each construction stated explicitly.</p>
+<p>The main sources are <a href="https://doi.org/10.1007/s10240-001-8192-2">Brylinski and Deligne</a> for central extensions by K2; <a href="https://doi.org/10.24033/ast.1046">Weissman</a> for L-groups and parameters; <a href="https://doi.org/10.24033/ast.1047">Gan and Gao</a> for the Langlands–Weissman programme; and <a href="https://doi.org/10.1007/978-0-8176-8334-4_13">McNamara</a> for metaplectic principal series and Satake theory.</p>
 <h3 id="bd-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
 <li><p><strong>Central extensions and K2 torsors.</strong> Define extensions, morphisms, pullback, pushout, Baer sum and splittings. Construct the algebraic K-theory sheaf K2 and multiplicative torsors. Prove the equivalence between the required extension and torsor descriptions, with field and regular-base hypotheses explicit.</p></li>
@@ -41,6 +42,7 @@
 <ul>
 <li>Brylinski-Deligne, <em>Central extensions of reductive groups by K2</em>, Publ. Math. IHES 94 (2001), 5-85. <a href="https://doi.org/10.1007/s10240-001-8192-2">DOI</a>.</li>
 <li>Weissman, <em>L-groups and parameters for covering groups</em>, Asterisque 398 (2018), 33-186. <a href="https://doi.org/10.24033/ast.1046">DOI</a>.</li>
+<li>Gan–Gao, <em>The Langlands-Weissman Program for Brylinski-Deligne extensions</em>, Asterisque 398 (2018), 187-275. <a href="https://doi.org/10.24033/ast.1047">DOI</a>.</li>
 <li>McNamara, <em>Principal Series Representations of Metaplectic Groups Over Local Fields</em>, in <em>Multiple Dirichlet Series, L-functions and Automorphic Forms</em>, Progress in Mathematics 300 (2012), 299-327. <a href="https://doi.org/10.1007/978-0-8176-8334-4_13">DOI</a>.</li>
 <li>Kazhdan-Patterson, <em>Metaplectic forms</em>, IHES 59 (1984), 35-142. <a href="https://doi.org/10.1007/BF02698770">DOI</a>.</li>
 </ul>
@@ -48,9 +50,10 @@
 </div>
 </details>
 <details class="task" id="kp">
-<summary><h2>Task 2: Metaplectic representation theory of GL(r)</h2></summary>
+<summary><h2>Task 2: KP</h2></summary>
 <div class="task-body">
-<p>This team develops the GL(r) part of the unified Lean library and Lean-certified knowledge base, with matrix size r, covering degree n and determinant twist as parameters. It uses shared cover and Hecke definitions and supplies representations for periods, integrals and liftings. GL(2) is a worked example.</p>
+<p>Study the local representation theory and global automorphic theory of Kazhdan–Patterson (KP) covers of GL(r): covering tori, induction, exceptional representations, Whittaker models, Eisenstein series and metaplectic correspondence. Keep matrix size, covering degree and determinant twist as parameters; GL(2) is a worked example.</p>
+<p>The foundational sources are <a href="https://doi.org/10.1007/BF02698770">Kazhdan and Patterson’s <em>Metaplectic forms</em></a> and their work towards a generalized Shimura correspondence, together with <a href="https://doi.org/10.1007/BF01390092">Flicker’s GL(2) theory</a> and <a href="https://doi.org/10.1007/BF02699192">Flicker–Kazhdan metaplectic correspondence</a>. The local programme also includes <a href="https://doi.org/10.1007/s00209-023-03368-6">Zou’s correspondence results</a> and the <a href="https://doi.org/10.1090/ert/659">Kaplan–Lapid–Zou classification</a>.</p>
 <h3 id="kp-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
 <li><p><strong>Concrete covers and covering tori.</strong> Construct KP cocycles, centers, splittings and torus representations in general rank. Determine genuine central characters and the restrictions to Borel and Levi subgroups.</p></li>
@@ -79,9 +82,10 @@
 </div>
 </details>
 <details class="task" id="bump-ginzburg">
-<summary><h2>Task 3: Small representations, periods, integrals and liftings</h2></summary>
+<summary><h2>Task 3: BG</h2></summary>
 <div class="task-body">
-<p>This team develops these parts of the unified Lean library and Lean-certified knowledge base, covering all covering-related Bump-Ginzburg work and relevant coauthored developments. It uses common covers, induction and automorphic representations, and supplies Fourier-model, integral and lifting constructions. Group type, isogeny, field and covering degree remain parameters wherever the theory permits.</p>
+<p>Study the covering-group integral and lifting constructions of Bump–Ginzburg (BG) and their collaborators: theta and small representations, Fourier coefficients, local and global zeta integrals, symmetric-power L-functions, orthogonal-cover liftings and cubic Shimura periods.</p>
+<p>The principal works are the <a href="https://doi.org/10.2307/2946548">Bump–Ginzburg symmetric-square construction</a>, the <a href="https://doi.org/10.1007/s002220050082">Bump–Ginzburg–Hoffstein symmetric-cube construction</a>, and the work of <a href="https://doi.org/10.1215/S0012-7094-06-13126-5">Bump–Friedberg–Ginzburg</a> on cubic Shimura lifting, small representations and liftings between orthogonal covers.</p>
 <h3 id="bump-ginzburg-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
 <li><p><strong>Theta and small representations.</strong> Construct the required local representations and global Eisenstein residues on general linear, orthogonal and exceptional covers. Prove irreducibility, Jacquet-module and constant-term formulas, square integrability and local/global compatibility in the relevant families.</p></li>
@@ -105,9 +109,10 @@
 </div>
 </details>
 <details class="task" id="real-shimura">
-<summary><h2>Task 4: Real representations, character lifting and unitarity</h2></summary>
+<summary><h2>Task 4: AVT</h2></summary>
 <div class="task-body">
-<p>This team develops real representations, character lifting and unitarity in the unified Lean library and Lean-certified knowledge base. Include nonsplit real forms and complex groups viewed as real Lie groups; pseudospherical correspondence is one theorem family.</p>
+<p>Study the work of Adams, Vogan, Trapa (AVT) and their collaborators on Shimura correspondences, character lifting and unitarity for real covering groups, including nonsplit real forms and complex groups viewed as real Lie groups. The task covers both the foundational results and the later small-representation and lifting problems described below.</p>
+<p>The main sources are <a href="https://doi.org/10.1090/S0894-0347-06-00530-3">Adams–Barbasch–Paul–Trapa–Vogan</a> for unitary Shimura correspondence over split real groups; <a href="https://doi.org/10.1090/S1088-4165-10-00361-4">Adams–Herb</a> for character lifting; <a href="https://doi.org/10.1112/S0010437X11007354">Adams–Trapa</a> for nonlinear multiplicity duality; and <a href="https://doi.org/10.24033/ast.1119">Adams–van Leeuwen–Trapa–Vogan</a> for unitarity algorithms. The later lifting questions include work of Tsai and the Tsai–Wong–Zhang preprint listed in the references.</p>
 <h3 id="real-shimura-mathematical-checkpoints">Mathematical checkpoints</h3>
 <ol>
 <li><p><strong>Representations and operators.</strong> Construct real covers, genuine characters, compact types, Harish-Chandra modules and the required globalizations. Develop normalized induction, standard modules, intertwining operators and invariant Hermitian forms using common root-data and normalization conventions.</p></li>
