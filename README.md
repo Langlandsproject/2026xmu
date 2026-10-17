@@ -12,7 +12,7 @@ held at the **Tianyuan Mathematical Center in Southeast China**, Xiamen Universi
 A static conference page (`index.html`, self-contained HTML + CSS, no build step) with image assets in `assets/`. Sections:
 About · Participants and speakers · Host city and institutions · Lodging · Program (TBA) · Organizing committee · Contact.
 
-`tasks/index.html` is the AI-assisted research tasks overview. Four task pages and `tasks/knowledge-base.html` contain the mathematical briefs, shared requirements and bibliographic links. Their shared styles are in `assets/tasks.css`. These pages describe proposed research and formalization work, not completed Lean results.
+`tasks/index.html` opens with a general introduction followed by four collapsed task titles. Each title expands to the full brief, with a link to its separate page. The four task pages and `tasks/knowledge-base.html` contain the mathematical briefs, shared requirements and bibliographic links. Their shared styles are in `assets/tasks.css`. These pages describe proposed research and formalization work, not completed Lean results.
 
 ## Editing
 

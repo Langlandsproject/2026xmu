@@ -4,7 +4,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:var(--teal);text-underline-offset:.18em}
 a:hover{text-decoration-thickness:2px}
-a:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
 .wrap{width:min(900px,calc(100% - 48px));margin-inline:auto}
 .skip{position:absolute;left:-9999px;top:12px;z-index:10}
 .skip:focus{left:16px;padding:8px 12px;background:white;color:var(--navy)}
@@ -25,12 +25,15 @@ li::marker{color:var(--teal)}
 strong{font-weight:650}
 code{font-size:.94em;overflow-wrap:anywhere}
 .lead{font-size:1.1rem;color:#3f535c}
-.guide{margin:32px 0;padding:22px 26px;border-left:3px solid var(--teal);background:var(--cream)}
-.guide p{margin:8px 0 0}
-.tasks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:44px}
-.task{border-top:2px solid var(--navy);padding-top:24px}
-.task h2{margin:0 0 14px;font-size:1.7rem}
-.task p{color:#3f535c;font-size:.96rem}
+.tasks{margin-top:40px;border-top:1px solid var(--line)}
+.task{border-bottom:1px solid var(--line)}
+.task>summary{padding:24px 0;cursor:pointer;color:var(--navy)}
+.task>summary::marker{color:var(--teal);font-size:1rem}
+.task>summary:hover{color:var(--teal)}
+.task>summary h2{display:inline;margin:0;font-size:clamp(1.4rem,3.5vw,1.7rem);color:inherit}
+.task-body{padding:0 0 24px}
+.task-body h3{margin:32px 0 18px;font-size:1.45rem}
+.task-body p,.task-body li{font-size:.96rem}
 .task-nav{display:flex;gap:18px 32px;flex-wrap:wrap;margin-top:52px;padding-top:24px;border-top:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);font-size:.85rem}
-@media(max-width:620px){.wrap{width:calc(100% - 32px)}main{padding-top:40px}.tasks{grid-template-columns:1fr;gap:24px}.guide{padding:18px 20px}}
+@media(max-width:620px){.wrap{width:calc(100% - 32px)}main{padding-top:40px}.task>summary{padding:20px 0}}
